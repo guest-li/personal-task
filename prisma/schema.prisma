@@ -1,0 +1,105 @@
+// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  student
+  counselor
+  admin
+  partner
+}
+
+enum Gender {
+  male
+  female
+  other
+}
+
+enum UserStatus {
+  active
+  inactive
+  suspended
+}
+
+enum Qualification {
+  high_school
+  bachelor
+  master
+}
+
+model User {
+  id           String     @id @default(uuid())
+  email        String     @unique
+  passwordHash String?    @map("password_hash")
+  name         String
+  phone        String?
+  gender       Gender?
+  country      String?
+  continent    String?
+  role         Role       @default(student)
+  avatar       String?
+  googleId     String?    @unique @map("google_id")
+  status       UserStatus @default(active)
+  createdAt    DateTime   @default(now()) @map("created_at")
+  updatedAt    DateTime   @updatedAt @map("updated_at")
+
+  studentProfile StudentProfile?
+  partnerProfile PartnerProfile?
+  certificates   Certificate[]
+
+  @@map("users")
+}
+
+model StudentProfile {
+  id                 String         @id @default(uuid())
+  userId             String         @unique @map("user_id")
+  user               User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  passportNid        String?        @map("passport_nid")
+  qualification      Qualification?
+  interestedMajor    String?        @map("interested_major")
+  lastAcademicResult String?        @map("last_academic_result")
+  experience         String?
+  language           String?
+  preferredCountries String[]       @map("preferred_countries")
+  address            String?
+  bio                String?
+
+  @@map("student_profiles")
+}
+
+model Certificate {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name      String
+  fileUrl   String   @map("file_url")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("certificates")
+}
+
+enum PartnerLevel {
+  beginner
+  intermediate
+  advanced
+  expert
+}
+
+model PartnerProfile {
+  id                  String       @id @default(uuid())
+  userId              String       @unique @map("user_id")
+  user                User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  qualifications      String?
+  experience          String?
+  specializationAreas String[]     @map("specialization_areas")
+  level               PartnerLevel @default(beginner)
+  bio                 String?
+
+  @@map("partner_profiles")
+}
