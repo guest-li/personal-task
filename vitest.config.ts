@@ -8,12 +8,31 @@ export default defineConfig({
     environment: "node",
     include: ["tests/**/*.test.ts"],
     setupFiles: [],
+    pool: "forks",
+    poolOptions: {
+      forks: {
+        singleFork: true,
+      },
+    },
   },
   resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-      "@/app": path.resolve(__dirname, "./app"),
-      "server-only": path.resolve(__dirname, "./tests/helpers/server-only-mock.ts"),
-    },
+    alias: [
+      {
+        find: "@/app",
+        replacement: path.resolve(__dirname, "./app"),
+      },
+      {
+        find: "@/server/redis",
+        replacement: path.resolve(__dirname, "./tests/helpers/redis-mock.ts"),
+      },
+      {
+        find: "@",
+        replacement: path.resolve(__dirname, "./src"),
+      },
+      {
+        find: "server-only",
+        replacement: path.resolve(__dirname, "./tests/helpers/server-only-mock.ts"),
+      },
+    ],
   },
 });
