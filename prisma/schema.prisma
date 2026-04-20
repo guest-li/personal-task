@@ -49,9 +49,12 @@ model User {
   createdAt    DateTime   @default(now()) @map("created_at")
   updatedAt    DateTime   @updatedAt @map("updated_at")
 
-  studentProfile StudentProfile?
-  partnerProfile PartnerProfile?
-  certificates   Certificate[]
+  studentProfile     StudentProfile?
+  partnerProfile     PartnerProfile?
+  certificates       Certificate[]
+  applications       Application[]
+  eventRegistrations EventRegistration[]
+  notifications      Notification[]
 
   @@map("users")
 }
@@ -102,4 +105,93 @@ model PartnerProfile {
   bio                 String?
 
   @@map("partner_profiles")
+}
+
+enum FundType {
+  self_funded
+  scholarship
+}
+
+enum ApplicationStatus {
+  pending
+  approved
+  rejected
+  cancelled
+}
+
+model Application {
+  id                 String            @id @default(uuid())
+  applicationCode    String            @unique @map("application_code")
+  userId             String            @map("user_id")
+  user               User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  programName        String            @map("program_name")
+  universityName     String            @map("university_name")
+  degree             String?
+  language           String?
+  fundType           FundType          @default(self_funded) @map("fund_type")
+  status             ApplicationStatus @default(pending)
+  applicationFee     Decimal           @default(0) @map("application_fee") @db.Decimal(10, 2)
+  applicationFeePaid Decimal           @default(0) @map("application_fee_paid") @db.Decimal(10, 2)
+  serviceCharge      Decimal           @default(0) @map("service_charge") @db.Decimal(10, 2)
+  serviceChargePaid  Decimal           @default(0) @map("service_charge_paid") @db.Decimal(10, 2)
+  appliedAt          DateTime          @default(now()) @map("applied_at")
+  updatedAt          DateTime          @updatedAt @map("updated_at")
+
+  @@map("applications")
+}
+
+enum EventStatus {
+  upcoming
+  ongoing
+  past
+}
+
+model Event {
+  id            String        @id @default(uuid())
+  name          String
+  startDate     DateTime      @map("start_date")
+  endDate       DateTime      @map("end_date")
+  price         Decimal       @default(0) @db.Decimal(10, 2)
+  category      String?
+  location      String?
+  description   String?
+  image         String?
+  status        EventStatus   @default(upcoming)
+  createdAt     DateTime      @default(now()) @map("created_at")
+
+  registrations EventRegistration[]
+
+  @@map("events")
+}
+
+enum PaymentStatus {
+  pending
+  paid
+  failed
+}
+
+model EventRegistration {
+  id            String        @id @default(uuid())
+  userId        String        @map("user_id")
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  eventId       String        @map("event_id")
+  event         Event         @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  orderDate     DateTime      @default(now()) @map("order_date")
+  paymentStatus PaymentStatus @default(pending) @map("payment_status")
+  createdAt     DateTime      @default(now()) @map("created_at")
+
+  @@unique([userId, eventId])
+  @@map("event_registrations")
+}
+
+model Notification {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  message   String
+  isRead    Boolean  @default(false) @map("is_read")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("notifications")
 }
