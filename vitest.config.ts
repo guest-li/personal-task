@@ -1,6 +1,19 @@
 // vitest.config.ts
 import { defineConfig } from "vitest/config";
 import path from "path";
+import { readFileSync } from "fs";
+
+// Load environment variables manually
+const envContent = readFileSync(".env", "utf-8");
+envContent.split("\n").forEach((line) => {
+  const trimmed = line.trim();
+  if (trimmed && !trimmed.startsWith("#")) {
+    const [key, value] = trimmed.split("=");
+    if (key && value) {
+      process.env[key.trim()] = value.trim().replace(/^["']|["']$/g, "");
+    }
+  }
+});
 
 export default defineConfig({
   test: {
