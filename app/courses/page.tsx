@@ -51,11 +51,19 @@ export default function CoursesPage() {
 
   return (
     <PublicLayout>
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-8">Courses in China</h1>
+      {/* Hero Banner */}
+      <div className="bg-gradient-to-r from-brand-700 to-brand-800 text-white py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Browse Courses</h1>
+          <p className="text-xl text-brand-100 max-w-2xl">
+            Explore 700+ courses across diverse fields of study at top Chinese universities
+          </p>
+        </div>
+      </div>
 
+      <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <SearchBar onSearch={handleSearch} />
+          <SearchBar />
         </div>
 
         <div className="mb-8">

@@ -41,11 +41,19 @@ export default function BlogPage() {
 
   return (
     <PublicLayout>
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-8">Blog & News</h1>
+      {/* Hero Banner */}
+      <div className="bg-gradient-to-r from-brand-700 to-brand-800 text-white py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Blog & Resources</h1>
+          <p className="text-xl text-brand-100 max-w-2xl">
+            Read insights and guides about studying in China, scholarship tips, and student success stories
+          </p>
+        </div>
+      </div>
 
+      <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <SearchBar onSearch={handleSearch} />
+          <SearchBar />
         </div>
 
         {loading ? (
