@@ -1,11 +1,47 @@
 import { prisma } from "@/server/db";
 
+// ==================== Filter Type Definitions ====================
+
+interface UniversityFilters {
+  province?: string;
+  tags?: string[];
+  search?: string;
+}
+
+interface CourseFilters {
+  degree?: string;
+  language?: string;
+  major?: string;
+  universityId?: string;
+  intake?: string;
+  province?: string;
+  city?: string;
+  search?: string;
+}
+
+interface ScholarshipFilters {
+  type?: string;
+  degree?: string;
+  language?: string;
+  major?: string;
+  province?: string;
+  city?: string;
+  search?: string;
+}
+
+interface BlogFilters {
+  category?: string;
+  topic?: string;
+  search?: string;
+  sort?: string;
+}
+
 // ==================== University Query Functions ====================
 
 export async function listUniversities(
   page: number,
   limit: number,
-  filters: any,
+  filters: UniversityFilters = {},
 ) {
   const where: any = {};
   if (filters.province) where.province = filters.province;
@@ -45,7 +81,7 @@ export async function getUniversityBySlug(slug: string) {
 export async function listCourses(
   page: number,
   limit: number,
-  filters: any,
+  filters: CourseFilters = {},
 ) {
   const where: any = {};
   if (filters.degree) where.degree = filters.degree;
@@ -99,7 +135,7 @@ export async function getCourseBySlug(slug: string) {
 export async function listScholarships(
   page: number,
   limit: number,
-  filters: any,
+  filters: ScholarshipFilters = {},
 ) {
   const where: any = {};
   if (filters.type) where.type = filters.type;
@@ -134,7 +170,7 @@ export async function listScholarships(
 export async function listBlogPosts(
   page: number,
   limit: number,
-  filters: any,
+  filters: BlogFilters = {},
 ) {
   const where: any = { published: true };
   if (filters.category) where.category = filters.category;
