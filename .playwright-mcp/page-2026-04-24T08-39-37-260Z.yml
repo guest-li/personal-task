@@ -1,0 +1,358 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - generic [ref=e5]:
+          - link "MalishaEdu" [ref=e6] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e7]:
+            - link "Universities" [ref=e8] [cursor=pointer]:
+              - /url: /universities
+            - link "Courses" [ref=e9] [cursor=pointer]:
+              - /url: /courses
+            - link "Scholarships" [ref=e10] [cursor=pointer]:
+              - /url: /scholarships
+            - button "Services" [ref=e12] [cursor=pointer]:
+              - text: Services
+              - img [ref=e13]
+            - button "About" [ref=e16] [cursor=pointer]:
+              - text: About
+              - img [ref=e17]
+            - link "Blog" [ref=e19] [cursor=pointer]:
+              - /url: /blog
+            - link "Contact" [ref=e20] [cursor=pointer]:
+              - /url: /contact
+            - generic [ref=e21]:
+              - img [ref=e22]
+              - combobox [ref=e25] [cursor=pointer]:
+                - option "English" [selected]
+                - option "中文"
+                - option "বাংলা"
+            - link "Get Consultation" [ref=e26] [cursor=pointer]:
+              - /url: /get-free-consultation
+    - main [ref=e27]:
+      - generic [ref=e28]:
+        - heading "Universities in China" [level=1] [ref=e29]
+        - generic [ref=e32]:
+          - textbox "Search universities, courses..." [ref=e33]
+          - button "Search" [ref=e34] [cursor=pointer]
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e39]: Province
+            - textbox "Filter by province" [ref=e40]
+          - button "Clear All" [ref=e41] [cursor=pointer]
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - img "China Agricultural University" [ref=e44]
+            - generic [ref=e45]:
+              - heading "China Agricultural University" [level=3] [ref=e46]
+              - generic [ref=e47]:
+                - generic [ref=e48]: research
+                - generic [ref=e49]: top-50
+                - generic [ref=e50]: business
+                - generic [ref=e51]: funded
+                - generic [ref=e52]: top-10
+              - generic [ref=e53]:
+                - paragraph [ref=e54]:
+                  - strong [ref=e55]: "World Rank:"
+                  - text: "292"
+                - paragraph [ref=e56]:
+                  - strong [ref=e57]: "Location:"
+                  - text: Dalian
+                - paragraph [ref=e58]:
+                  - strong [ref=e59]: "Students:"
+                  - text: "15806"
+              - link "View Details" [ref=e60] [cursor=pointer]:
+                - /url: /universities/china-agricultural-university-35
+          - generic [ref=e61]:
+            - img "Jiangnan University" [ref=e62]
+            - generic [ref=e63]:
+              - heading "Jiangnan University" [level=3] [ref=e64]
+              - generic [ref=e65]:
+                - generic [ref=e66]: engineering
+                - generic [ref=e67]: top-10
+                - generic [ref=e68]: liberal-arts
+              - generic [ref=e69]:
+                - paragraph [ref=e70]:
+                  - strong [ref=e71]: "World Rank:"
+                  - text: "70"
+                - paragraph [ref=e72]:
+                  - strong [ref=e73]: "Location:"
+                  - text: Daqing
+                - paragraph [ref=e74]:
+                  - strong [ref=e75]: "Students:"
+                  - text: "40380"
+              - link "View Details" [ref=e76] [cursor=pointer]:
+                - /url: /universities/jiangnan-university-31
+          - generic [ref=e77]:
+            - img "Nankai University" [ref=e78]
+            - generic [ref=e79]:
+              - heading "Nankai University" [level=3] [ref=e80]
+              - generic [ref=e81]:
+                - generic [ref=e82]: business
+                - generic [ref=e83]: engineering
+                - generic [ref=e84]: accredited
+                - generic [ref=e85]: liberal-arts
+                - generic [ref=e86]: international
+              - generic [ref=e87]:
+                - paragraph [ref=e88]:
+                  - strong [ref=e89]: "World Rank:"
+                  - text: "20"
+                - paragraph [ref=e90]:
+                  - strong [ref=e91]: "Location:"
+                  - text: Tangshan
+                - paragraph [ref=e92]:
+                  - strong [ref=e93]: "Students:"
+                  - text: "62465"
+              - link "View Details" [ref=e94] [cursor=pointer]:
+                - /url: /universities/nankai-university-25
+          - generic [ref=e95]:
+            - img "Nanjing University of Science and Technology" [ref=e96]
+            - generic [ref=e97]:
+              - heading "Nanjing University of Science and Technology" [level=3] [ref=e98]
+              - generic [ref=e99]:
+                - generic [ref=e100]: top-10
+                - generic [ref=e101]: top-50
+                - generic [ref=e102]: liberal-arts
+                - generic [ref=e103]: merit-based
+              - generic [ref=e104]:
+                - paragraph [ref=e105]:
+                  - strong [ref=e106]: "World Rank:"
+                  - text: "245"
+                - paragraph [ref=e107]:
+                  - strong [ref=e108]: "Location:"
+                  - text: Beijing
+                - paragraph [ref=e109]:
+                  - strong [ref=e110]: "Students:"
+                  - text: "44271"
+              - link "View Details" [ref=e111] [cursor=pointer]:
+                - /url: /universities/nanjing-university-of-science-and-technology-27
+          - generic [ref=e112]:
+            - img "Tongji University" [ref=e113]
+            - generic [ref=e114]:
+              - heading "Tongji University" [level=3] [ref=e115]
+              - generic [ref=e116]:
+                - generic [ref=e117]: top-10
+                - generic [ref=e118]: top-50
+              - generic [ref=e119]:
+                - paragraph [ref=e120]:
+                  - strong [ref=e121]: "World Rank:"
+                  - text: "357"
+                - paragraph [ref=e122]:
+                  - strong [ref=e123]: "Location:"
+                  - text: Changsha
+                - paragraph [ref=e124]:
+                  - strong [ref=e125]: "Students:"
+                  - text: "63525"
+              - link "View Details" [ref=e126] [cursor=pointer]:
+                - /url: /universities/tongji-university-22
+          - generic [ref=e127]:
+            - img "Chongqing University" [ref=e128]
+            - generic [ref=e129]:
+              - heading "Chongqing University" [level=3] [ref=e130]
+              - generic [ref=e131]:
+                - generic [ref=e132]: engineering
+                - generic [ref=e133]: liberal-arts
+                - generic [ref=e134]: research
+                - generic [ref=e135]: business
+                - generic [ref=e136]: funded
+              - generic [ref=e137]:
+                - paragraph [ref=e138]:
+                  - strong [ref=e139]: "World Rank:"
+                  - text: "458"
+                - paragraph [ref=e140]:
+                  - strong [ref=e141]: "Location:"
+                  - text: Zhuhai
+                - paragraph [ref=e142]:
+                  - strong [ref=e143]: "Students:"
+                  - text: "94309"
+              - link "View Details" [ref=e144] [cursor=pointer]:
+                - /url: /universities/chongqing-university-20
+          - generic [ref=e145]:
+            - img "Sichuan University" [ref=e146]
+            - generic [ref=e147]:
+              - heading "Sichuan University" [level=3] [ref=e148]
+              - generic [ref=e149]:
+                - generic [ref=e150]: liberal-arts
+                - generic [ref=e151]: funded
+              - generic [ref=e152]:
+                - paragraph [ref=e153]:
+                  - strong [ref=e154]: "World Rank:"
+                  - text: "403"
+                - paragraph [ref=e155]:
+                  - strong [ref=e156]: "Location:"
+                  - text: Changchun
+                - paragraph [ref=e157]:
+                  - strong [ref=e158]: "Students:"
+                  - text: "83525"
+              - link "View Details" [ref=e159] [cursor=pointer]:
+                - /url: /universities/sichuan-university-26
+          - generic [ref=e160]:
+            - img "University of Shanghai for Science and Technology" [ref=e161]
+            - generic [ref=e162]:
+              - heading "University of Shanghai for Science and Technology" [level=3] [ref=e163]
+              - generic [ref=e164]:
+                - generic [ref=e165]: international
+                - generic [ref=e166]: accredited
+                - generic [ref=e167]: top-10
+                - generic [ref=e168]: top-50
+                - generic [ref=e169]: research
+              - generic [ref=e170]:
+                - paragraph [ref=e171]:
+                  - strong [ref=e172]: "World Rank:"
+                  - text: "391"
+                - paragraph [ref=e173]:
+                  - strong [ref=e174]: "Location:"
+                  - text: Xiamen
+                - paragraph [ref=e175]:
+                  - strong [ref=e176]: "Students:"
+                  - text: "37702"
+              - link "View Details" [ref=e177] [cursor=pointer]:
+                - /url: /universities/university-of-shanghai-for-science-and-technology-30
+          - generic [ref=e178]:
+            - img "East China Normal University" [ref=e179]
+            - generic [ref=e180]:
+              - heading "East China Normal University" [level=3] [ref=e181]
+              - generic [ref=e182]:
+                - generic [ref=e183]: research
+                - generic [ref=e184]: business
+                - generic [ref=e185]: liberal-arts
+                - generic [ref=e186]: international
+              - generic [ref=e187]:
+                - paragraph [ref=e188]:
+                  - strong [ref=e189]: "World Rank:"
+                  - text: "65"
+                - paragraph [ref=e190]:
+                  - strong [ref=e191]: "Location:"
+                  - text: Wuhan
+                - paragraph [ref=e192]:
+                  - strong [ref=e193]: "Students:"
+                  - text: "29748"
+              - link "View Details" [ref=e194] [cursor=pointer]:
+                - /url: /universities/east-china-normal-university-24
+          - generic [ref=e195]:
+            - img "Shanghai University" [ref=e196]
+            - generic [ref=e197]:
+              - heading "Shanghai University" [level=3] [ref=e198]
+              - generic [ref=e199]:
+                - generic [ref=e200]: research
+                - generic [ref=e201]: top-10
+                - generic [ref=e202]: funded
+                - generic [ref=e203]: merit-based
+              - generic [ref=e204]:
+                - paragraph [ref=e205]:
+                  - strong [ref=e206]: "World Rank:"
+                  - text: "178"
+                - paragraph [ref=e207]:
+                  - strong [ref=e208]: "Location:"
+                  - text: Wuhan
+                - paragraph [ref=e209]:
+                  - strong [ref=e210]: "Students:"
+                  - text: "53192"
+              - link "View Details" [ref=e211] [cursor=pointer]:
+                - /url: /universities/shanghai-university-23
+          - generic [ref=e212]:
+            - img "Nanjing Southeast University" [ref=e213]
+            - generic [ref=e214]:
+              - heading "Nanjing Southeast University" [level=3] [ref=e215]
+              - generic [ref=e216]:
+                - generic [ref=e217]: top-10
+                - generic [ref=e218]: top-50
+              - generic [ref=e219]:
+                - paragraph [ref=e220]:
+                  - strong [ref=e221]: "World Rank:"
+                  - text: "378"
+                - paragraph [ref=e222]:
+                  - strong [ref=e223]: "Location:"
+                  - text: Qingdao
+                - paragraph [ref=e224]:
+                  - strong [ref=e225]: "Students:"
+                  - text: "96168"
+              - link "View Details" [ref=e226] [cursor=pointer]:
+                - /url: /universities/nanjing-southeast-university-29
+          - generic [ref=e227]:
+            - img "Beijing Normal University" [ref=e228]
+            - generic [ref=e229]:
+              - heading "Beijing Normal University" [level=3] [ref=e230]
+              - generic [ref=e231]:
+                - generic [ref=e232]: accredited
+                - generic [ref=e233]: top-10
+              - generic [ref=e234]:
+                - paragraph [ref=e235]:
+                  - strong [ref=e236]: "World Rank:"
+                  - text: "428"
+                - paragraph [ref=e237]:
+                  - strong [ref=e238]: "Location:"
+                  - text: Hefei
+                - paragraph [ref=e239]:
+                  - strong [ref=e240]: "Students:"
+                  - text: "69797"
+              - link "View Details" [ref=e241] [cursor=pointer]:
+                - /url: /universities/beijing-normal-university-33
+        - generic [ref=e242]:
+          - button "Previous" [disabled] [ref=e243]
+          - generic [ref=e244]: Page 1 of 6
+          - button "Next" [ref=e245] [cursor=pointer]
+    - contentinfo [ref=e246]:
+      - generic [ref=e247]:
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - link "MalishaEdu" [ref=e250] [cursor=pointer]:
+              - /url: /
+            - paragraph [ref=e251]: Your gateway to international education
+            - generic [ref=e252]:
+              - link "Facebook" [ref=e253] [cursor=pointer]:
+                - /url: "#"
+              - link "Twitter" [ref=e254] [cursor=pointer]:
+                - /url: "#"
+              - link "Instagram" [ref=e255] [cursor=pointer]:
+                - /url: "#"
+              - link "YouTube" [ref=e256] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e257]:
+            - heading "Explore" [level=3] [ref=e258]
+            - list [ref=e259]:
+              - listitem [ref=e260]:
+                - link "Universities" [ref=e261] [cursor=pointer]:
+                  - /url: /universities
+              - listitem [ref=e262]:
+                - link "Courses" [ref=e263] [cursor=pointer]:
+                  - /url: /courses
+              - listitem [ref=e264]:
+                - link "Scholarships" [ref=e265] [cursor=pointer]:
+                  - /url: /scholarships
+              - listitem [ref=e266]:
+                - link "Blog" [ref=e267] [cursor=pointer]:
+                  - /url: /blog
+          - generic [ref=e268]:
+            - heading "Services" [level=3] [ref=e269]
+            - list [ref=e270]:
+              - listitem [ref=e271]:
+                - link "Admission Guidance" [ref=e272] [cursor=pointer]:
+                  - /url: /services
+              - listitem [ref=e273]:
+                - link "Language Prep" [ref=e274] [cursor=pointer]:
+                  - /url: /services
+              - listitem [ref=e275]:
+                - link "Airport Pickup" [ref=e276] [cursor=pointer]:
+                  - /url: /services
+              - listitem [ref=e277]:
+                - link "On-Campus Support" [ref=e278] [cursor=pointer]:
+                  - /url: /services
+          - generic [ref=e279]:
+            - heading "Newsletter" [level=3] [ref=e280]
+            - paragraph [ref=e281]: Subscribe for updates
+            - generic [ref=e282]:
+              - textbox "Your email" [ref=e283]
+              - button "Subscribe" [ref=e284] [cursor=pointer]
+        - generic [ref=e286]:
+          - generic [ref=e287]: © 2026 MalishaEdu. All rights reserved.
+          - generic [ref=e288]:
+            - link "Privacy" [ref=e289] [cursor=pointer]:
+              - /url: /privacy-policy
+            - link "Terms" [ref=e290] [cursor=pointer]:
+              - /url: /terms-conditions
+            - link "Contact" [ref=e291] [cursor=pointer]:
+              - /url: /contact
+          - generic [ref=e292]: Built with ❤️ in China
+  - alert [ref=e293]

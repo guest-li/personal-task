@@ -1,24 +1,19 @@
-[      93ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
-[     256ms] [LOG] [Fast Refresh] done in 164ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
-[     608ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559
-[  600876ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
-[  601326ms] [LOG] [Fast Refresh] done in 451ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
-[  610361ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
-[  610852ms] [LOG] [Fast Refresh] done in 491ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
-[  617298ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
-[  617378ms] [LOG] [Fast Refresh] done in 81ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
-[  620380ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
-[  620653ms] [LOG] [Fast Refresh] done in 274ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
-[  623326ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
-[  623474ms] [LOG] [Fast Refresh] done in 148ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
-[  653104ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
-[  653325ms] [LOG] [Fast Refresh] done in 221ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
-[  732378ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
-[  732686ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[     452ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559
+[    6636ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=China%20Agricultural%20University:0
+[    6652ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Jiangnan%20University:0
+[    7771ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Nankai%20University:0
+[    7869ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Nanjing%20University%20of%20Science%20and%20Technology:0
+[   14743ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Tongji%20University:0
+[   16334ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Chongqing%20University:0
+[   18016ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Sichuan%20University:0
+[   18387ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=University%20of%20Shanghai%20for%20Science%20and%20Technology:0
+[   19911ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=East%20China%20Normal%20University:0
+[   20185ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[   20376ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -57,11 +52,11 @@
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732686ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20376ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -100,11 +95,11 @@
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732687ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20376ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -143,11 +138,11 @@
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732687ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20377ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -186,11 +181,11 @@
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732687ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20377ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -229,11 +224,11 @@
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732687ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20377ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -272,11 +267,11 @@
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732687ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20377ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -315,11 +310,11 @@
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732688ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20377ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -358,7 +353,7 @@
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732692ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20380ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -366,7 +361,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at HTMLUnknownElement.callCallback (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:20565:14)
@@ -386,9 +381,9 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732692ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20382ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -396,7 +391,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14)
@@ -413,9 +408,9 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732693ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20382ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -423,7 +418,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14)
@@ -440,9 +435,9 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732693ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20383ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -450,7 +445,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14)
@@ -467,9 +462,9 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732694ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20383ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -477,7 +472,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14)
@@ -494,9 +489,9 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732694ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20383ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -504,7 +499,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14)
@@ -521,13 +516,13 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732696ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20385ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -566,11 +561,11 @@ Check the render method of `PublicFooter`.
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732696ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20385ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -609,11 +604,11 @@ Check the render method of `PublicFooter`.
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732696ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20385ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -652,11 +647,11 @@ Check the render method of `PublicFooter`.
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732696ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20385ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -695,11 +690,11 @@ Check the render method of `PublicFooter`.
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732696ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20386ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -738,11 +733,11 @@ Check the render method of `PublicFooter`.
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732696ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20386ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -781,11 +776,11 @@ Check the render method of `PublicFooter`.
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732697ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20386ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -824,11 +819,11 @@ Check the render method of `PublicFooter`.
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732697ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20386ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -867,7 +862,7 @@ Check the render method of `PublicFooter`.
     at AppRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:13)
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732699ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20390ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -875,7 +870,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at HTMLUnknownElement.callCallback (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:20565:14)
@@ -895,9 +890,9 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732700ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20391ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -905,7 +900,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14)
@@ -922,9 +917,9 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732700ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20391ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -932,7 +927,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14)
@@ -949,9 +944,9 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732700ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20391ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -959,7 +954,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14)
@@ -976,9 +971,9 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732701ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20392ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -986,7 +981,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14)
@@ -1003,9 +998,9 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732701ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20392ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -1013,7 +1008,7 @@ Check the render method of `PublicFooter`.
     at reconcileSingleElement (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10439:23)
     at reconcileChildFibersImpl (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10503:35)
     at reconcileChildFibers (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:10573:27)
-    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15802:28)
+    at reconcileChildren (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15809:28)
     at updateHostComponent$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16687:3)
     at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18503:14)
     at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14)
@@ -1030,9 +1025,9 @@ Check the render method of `PublicFooter`.
     at Object.performReactRefresh (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js:254:26)
     at applyUpdate (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:139:31)
     at statusHandler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:156:13)
-    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:508:55)
-    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019048458:678:21
-[  732703ms] [ERROR] The above error occurred in the <NotFoundErrorBoundary> component:
+    at setStatus (http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:508:55)
+    at http://localhost:3000/_next/static/chunks/webpack.js?v=1777019906208:678:21
+[   20392ms] [ERROR] The above error occurred in the <NotFoundErrorBoundary> component:
 
     at a
     at div
@@ -1043,7 +1038,7 @@ Check the render method of `PublicFooter`.
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1084,14 +1079,14 @@ Check the render method of `PublicFooter`.
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
 
 React will try to recreate this component tree from scratch using the error boundary you provided, ReactDevOverlay. @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  732721ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:114
-[  732965ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/contact:0
-[  733303ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559
-[  733401ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20411ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:114
+[   20600ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/universities:0
+[   20792ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559
+[   20838ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1131,11 +1126,11 @@ React will try to recreate this component tree from scratch using the error boun
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733401ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20838ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1175,11 +1170,11 @@ React will try to recreate this component tree from scratch using the error boun
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733402ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20838ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1219,11 +1214,11 @@ React will try to recreate this component tree from scratch using the error boun
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733402ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20838ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1263,11 +1258,11 @@ React will try to recreate this component tree from scratch using the error boun
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733402ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20838ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1307,11 +1302,11 @@ React will try to recreate this component tree from scratch using the error boun
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733402ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20839ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1351,11 +1346,11 @@ React will try to recreate this component tree from scratch using the error boun
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733402ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20839ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1395,11 +1390,11 @@ React will try to recreate this component tree from scratch using the error boun
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733403ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20839ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1439,7 +1434,7 @@ React will try to recreate this component tree from scratch using the error boun
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733406ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20841ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -1461,7 +1456,7 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733406ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20841ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -1480,7 +1475,7 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733406ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20841ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -1499,7 +1494,7 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733407ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20842ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -1518,7 +1513,7 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733407ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20842ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -1537,7 +1532,7 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733407ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20842ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -1556,11 +1551,11 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733415ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20845ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1600,11 +1595,11 @@ Check the render method of `PublicFooter`.
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733415ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20845ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1644,11 +1639,11 @@ Check the render method of `PublicFooter`.
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733415ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20845ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1688,11 +1683,11 @@ Check the render method of `PublicFooter`.
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733415ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20846ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1732,11 +1727,11 @@ Check the render method of `PublicFooter`.
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733415ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20846ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1776,11 +1771,11 @@ Check the render method of `PublicFooter`.
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733415ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20846ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1820,11 +1815,11 @@ Check the render method of `PublicFooter`.
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733416ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20846ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1864,11 +1859,11 @@ Check the render method of `PublicFooter`.
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733416ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
+[   20846ms] [ERROR] Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s%s undefined  You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -1908,7 +1903,7 @@ Check the render method of `PublicFooter`.
     at ServerRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27)
     at Root (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:11)
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  733418ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20848ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -1931,7 +1926,7 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733418ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20849ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -1951,7 +1946,7 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733419ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20849ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -1971,7 +1966,7 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733419ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20849ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -1991,7 +1986,7 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733419ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20849ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -2011,7 +2006,7 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733419ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[   20850ms] Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 
 Check the render method of `PublicFooter`.
     at createFiberFromTypeAndProps (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27944:17)
@@ -2031,7 +2026,7 @@ Check the render method of `PublicFooter`.
     at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:34)
     at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
     at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
-[  733422ms] [ERROR] The above error occurred in the <NotFoundErrorBoundary> component:
+[   20849ms] [ERROR] The above error occurred in the <NotFoundErrorBoundary> component:
 
     at a
     at div
@@ -2042,7 +2037,7 @@ Check the render method of `PublicFooter`.
     at PublicFooter
     at div
     at PublicLayout (webpack-internal:///(app-pages-browser)/./src/components/public/PublicLayout.tsx:12:11)
-    at ContactPage (webpack-internal:///(app-pages-browser)/./app/contact/page.tsx:15:84)
+    at UniversitiesPage (webpack-internal:///(app-pages-browser)/./app/universities/page.tsx:21:92)
     at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:14:11)
     at InnerLayoutRouter (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:243:11)
     at RedirectErrorBoundary (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9)
@@ -2084,4 +2079,3 @@ Check the render method of `PublicFooter`.
     at ReactDevOverlay (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
 
 React will try to recreate this component tree from scratch using the error boundary you provided, ReactDevOverlay. @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
-[  736526ms] [WARNING] The resource http://localhost:3000/_next/static/css/app/layout.css?v=1777019781075 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/contact:0
