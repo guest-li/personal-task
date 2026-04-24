@@ -2,3 +2,14 @@
 [    5218ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=China%20Agricultural%20University:0
 [    8007ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Jiangnan%20University:0
 [    9659ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Nankai%20University:0
+[   16404ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Nanjing%20University%20of%20Science%20and%20Technology:0
+[   16412ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Tongji%20University:0
+[   25168ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Chongqing%20University:0
+[   25202ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Sichuan%20University:0
+[   34094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=University%20of%20Shanghai%20for%20Science%20and%20Technology:0
+[   38013ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=East%20China%20Normal%20University:0
+[   40099ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Shanghai%20University:0
+[   43790ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[   43906ms] [LOG] [Fast Refresh] done in 116ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[   44129ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Nanjing%20Southeast%20University:0
+[   46417ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Beijing%20Normal%20University:0

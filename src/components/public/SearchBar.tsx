@@ -1,10 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
-export function SearchBar({ onSearch }: { onSearch: (query: string) => void }) {
+export function SearchBar() {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState<any[]>([]);
+  const router = useRouter();
 
   useEffect(() => {
     if (query.length < 2) {
@@ -27,7 +29,9 @@ export function SearchBar({ onSearch }: { onSearch: (query: string) => void }) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSearch(query);
+    if (query.trim()) {
+      router.push(`/universities?search=${encodeURIComponent(query)}`);
+    }
   };
 
   return (
@@ -54,7 +58,11 @@ export function SearchBar({ onSearch }: { onSearch: (query: string) => void }) {
       {suggestions.length > 0 && (
         <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-brand-200 rounded-lg shadow-card z-10">
           {suggestions.map((item) => (
-            <div key={item.id} className="px-4 py-2 hover:bg-brand-50 cursor-pointer border-b border-brand-50 last:border-b-0 transition-colors">
+            <div
+              key={item.id}
+              onClick={() => router.push(`/universities/${item.id}`)}
+              className="px-4 py-2 hover:bg-brand-50 cursor-pointer border-b border-brand-50 last:border-b-0 transition-colors"
+            >
               {item.name}
             </div>
           ))}

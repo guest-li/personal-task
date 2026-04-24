@@ -1,0 +1,211 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - generic [ref=e5]:
+          - link "MalishaEdu" [ref=e6] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e7]:
+            - link "Universities" [ref=e8] [cursor=pointer]:
+              - /url: /universities
+            - link "Courses" [ref=e9] [cursor=pointer]:
+              - /url: /courses
+            - link "Scholarships" [ref=e10] [cursor=pointer]:
+              - /url: /scholarships
+            - button "Services" [ref=e12] [cursor=pointer]:
+              - text: Services
+              - img [ref=e13]
+            - button "About" [ref=e16] [cursor=pointer]:
+              - text: About
+              - img [ref=e17]
+            - link "Blog" [ref=e19] [cursor=pointer]:
+              - /url: /blog
+            - link "Contact" [ref=e20] [cursor=pointer]:
+              - /url: /contact
+            - generic [ref=e21]:
+              - img [ref=e22]
+              - combobox [ref=e25] [cursor=pointer]:
+                - option "English" [selected]
+                - option "中文"
+                - option "বাংলা"
+            - link "Get Consultation" [ref=e26] [cursor=pointer]:
+              - /url: /get-free-consultation
+    - main [ref=e27]:
+      - generic [ref=e33]:
+        - heading "Your Gateway to International Education" [level=1] [ref=e34]
+        - paragraph [ref=e35]: Connect with top universities, explore scholarships, and start your journey to success in China with expert guidance.
+        - generic [ref=e36]:
+          - link "Explore Universities" [ref=e37] [cursor=pointer]:
+            - /url: /universities
+          - link "Get Consultation" [ref=e38] [cursor=pointer]:
+            - /url: /get-free-consultation
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - paragraph [ref=e43]: 10,000+
+          - paragraph [ref=e44]: Students Served
+        - generic [ref=e45]:
+          - paragraph [ref=e46]: "73"
+          - paragraph [ref=e47]: Universities
+        - generic [ref=e48]:
+          - paragraph [ref=e49]: 700+
+          - paragraph [ref=e50]: Scholarships
+        - generic [ref=e51]:
+          - paragraph [ref=e52]: 15+
+          - paragraph [ref=e53]: Years Experience
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - heading "Top Universities" [level=2] [ref=e57]
+          - paragraph [ref=e58]: Connect with China's leading institutions
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - heading "Tsinghua University" [level=3] [ref=e62]
+            - paragraph [ref=e63]: "Rank: #1"
+            - paragraph [ref=e64]: 📍 Beijing
+            - link "Learn More" [ref=e65] [cursor=pointer]:
+              - /url: /universities
+          - generic [ref=e66]:
+            - heading "Peking University" [level=3] [ref=e68]
+            - paragraph [ref=e69]: "Rank: #2"
+            - paragraph [ref=e70]: 📍 Beijing
+            - link "Learn More" [ref=e71] [cursor=pointer]:
+              - /url: /universities
+          - generic [ref=e72]:
+            - heading "Zhejiang University" [level=3] [ref=e74]
+            - paragraph [ref=e75]: "Rank: #3"
+            - paragraph [ref=e76]: 📍 Hangzhou
+            - link "Learn More" [ref=e77] [cursor=pointer]:
+              - /url: /universities
+        - link "View all 73 universities →" [ref=e79] [cursor=pointer]:
+          - /url: /universities
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - heading "Our Services" [level=2] [ref=e83]
+          - paragraph [ref=e84]: Comprehensive support for your journey
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - paragraph [ref=e87]: 📋
+            - heading "University Selection" [level=3] [ref=e88]
+            - paragraph [ref=e89]: Expert guidance to find your perfect match
+          - generic [ref=e90]:
+            - paragraph [ref=e91]: 📝
+            - heading "Application Support" [level=3] [ref=e92]
+            - paragraph [ref=e93]: Complete assistance with applications
+          - generic [ref=e94]:
+            - paragraph [ref=e95]: 🎓
+            - heading "Scholarship Help" [level=3] [ref=e96]
+            - paragraph [ref=e97]: Maximize your scholarship opportunities
+          - generic [ref=e98]:
+            - paragraph [ref=e99]: 📚
+            - heading "Language Preparation" [level=3] [ref=e100]
+            - paragraph [ref=e101]: IELTS and Mandarin coaching
+          - generic [ref=e102]:
+            - paragraph [ref=e103]: ✈️
+            - heading "Visa Assistance" [level=3] [ref=e104]
+            - paragraph [ref=e105]: Smooth visa and immigration process
+          - generic [ref=e106]:
+            - paragraph [ref=e107]: 🏠
+            - heading "Accommodation" [level=3] [ref=e108]
+            - paragraph [ref=e109]: Housing support and guidance
+      - generic [ref=e111]:
+        - heading "How It Works" [level=2] [ref=e113]
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e116]: "1"
+            - heading "Free Consultation" [level=3] [ref=e117]
+            - paragraph [ref=e118]: Meet with our experts to discuss your goals
+          - generic [ref=e119]:
+            - generic [ref=e120]: "2"
+            - heading "Personalized Plan" [level=3] [ref=e121]
+            - paragraph [ref=e122]: We create a tailored study plan for you
+          - generic [ref=e123]:
+            - generic [ref=e124]: "3"
+            - heading "Complete Support" [level=3] [ref=e125]
+            - paragraph [ref=e126]: We guide you through every step
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - heading "Success Stories" [level=2] [ref=e130]
+          - paragraph [ref=e131]: What our students say
+        - generic [ref=e132]:
+          - generic [ref=e133]:
+            - paragraph [ref=e134]: ★ ★ ★ ★ ★
+            - paragraph [ref=e135]: "\"MalishaEdu made my dream of studying at Tsinghua a reality! Highly recommended.\""
+            - paragraph [ref=e136]: Sarah Chen
+            - paragraph [ref=e137]: 📍 Malaysia
+          - generic [ref=e138]:
+            - paragraph [ref=e139]: ★ ★ ★ ★ ★
+            - paragraph [ref=e140]: "\"The visa process was smooth thanks to their expert guidance. Thank you!\""
+            - paragraph [ref=e141]: Ahmed Hassan
+            - paragraph [ref=e142]: 📍 Egypt
+          - generic [ref=e143]:
+            - paragraph [ref=e144]: ★ ★ ★ ★ ★
+            - paragraph [ref=e145]: "\"Best investment for my future. The scholarship they helped me get is life-changing.\""
+            - paragraph [ref=e146]: Priya Sharma
+            - paragraph [ref=e147]: 📍 India
+      - generic [ref=e149]:
+        - heading "Start Your Journey Today" [level=2] [ref=e150]
+        - paragraph [ref=e151]: Join thousands of students who have successfully studied in China with MalishaEdu's expert guidance.
+        - link "Get Free Consultation Now" [ref=e152] [cursor=pointer]:
+          - /url: /get-free-consultation
+    - contentinfo [ref=e153]:
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - link "MalishaEdu" [ref=e157] [cursor=pointer]:
+              - /url: /
+            - paragraph [ref=e158]: Your gateway to international education
+            - generic [ref=e159]:
+              - link "Facebook" [ref=e160] [cursor=pointer]:
+                - /url: "#"
+              - link "Twitter" [ref=e161] [cursor=pointer]:
+                - /url: "#"
+              - link "Instagram" [ref=e162] [cursor=pointer]:
+                - /url: "#"
+              - link "YouTube" [ref=e163] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e164]:
+            - heading "Explore" [level=3] [ref=e165]
+            - list [ref=e166]:
+              - listitem [ref=e167]:
+                - link "Universities" [ref=e168] [cursor=pointer]:
+                  - /url: /universities
+              - listitem [ref=e169]:
+                - link "Courses" [ref=e170] [cursor=pointer]:
+                  - /url: /courses
+              - listitem [ref=e171]:
+                - link "Scholarships" [ref=e172] [cursor=pointer]:
+                  - /url: /scholarships
+              - listitem [ref=e173]:
+                - link "Blog" [ref=e174] [cursor=pointer]:
+                  - /url: /blog
+          - generic [ref=e175]:
+            - heading "Services" [level=3] [ref=e176]
+            - list [ref=e177]:
+              - listitem [ref=e178]:
+                - link "Admission Guidance" [ref=e179] [cursor=pointer]:
+                  - /url: /services
+              - listitem [ref=e180]:
+                - link "Language Prep" [ref=e181] [cursor=pointer]:
+                  - /url: /services
+              - listitem [ref=e182]:
+                - link "Airport Pickup" [ref=e183] [cursor=pointer]:
+                  - /url: /services
+              - listitem [ref=e184]:
+                - link "On-Campus Support" [ref=e185] [cursor=pointer]:
+                  - /url: /services
+          - generic [ref=e186]:
+            - heading "Newsletter" [level=3] [ref=e187]
+            - paragraph [ref=e188]: Subscribe for updates
+            - generic [ref=e189]:
+              - textbox "Your email" [ref=e190]
+              - button "Subscribe" [ref=e191] [cursor=pointer]
+        - generic [ref=e193]:
+          - generic [ref=e194]: © 2026 MalishaEdu. All rights reserved.
+          - generic [ref=e195]:
+            - link "Privacy" [ref=e196] [cursor=pointer]:
+              - /url: /privacy-policy
+            - link "Terms" [ref=e197] [cursor=pointer]:
+              - /url: /terms-conditions
+            - link "Contact" [ref=e198] [cursor=pointer]:
+              - /url: /contact
+          - generic [ref=e199]: Built with ❤️ in China
+  - alert [ref=e200]
