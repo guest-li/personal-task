@@ -1,0 +1,35 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: EduConsult
+        - button "Toggle sidebar" [ref=e6] [cursor=pointer]: ☰
+      - navigation [ref=e7]:
+        - link "📊 Dashboard" [ref=e8] [cursor=pointer]:
+          - /url: /user/dashboard
+          - generic [ref=e9]: 📊
+          - generic [ref=e10]: Dashboard
+        - link "➕ Apply For New" [ref=e11] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e12]: ➕
+          - generic [ref=e13]: Apply For New
+        - link "📄 My Application" [ref=e14] [cursor=pointer]:
+          - /url: /user/my-application
+          - generic [ref=e15]: 📄
+          - generic [ref=e16]: My Application
+        - link "🔔 Notification" [ref=e17] [cursor=pointer]:
+          - /url: /user/notification
+          - generic [ref=e18]: 🔔
+          - generic [ref=e19]: Notification
+    - banner [ref=e20]:
+      - textbox "Search..." [ref=e22]
+      - generic [ref=e23]:
+        - button "🔔 1" [ref=e24] [cursor=pointer]:
+          - text: 🔔
+          - generic [ref=e25]: "1"
+        - button "J John Partner" [ref=e27] [cursor=pointer]:
+          - generic [ref=e28]: J
+          - generic [ref=e29]: John Partner
+    - main [ref=e30]:
+      - generic [ref=e32]: Loading dashboard...
+  - alert [ref=e33]

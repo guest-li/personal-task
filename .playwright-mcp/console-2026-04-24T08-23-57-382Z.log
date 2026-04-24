@@ -1,0 +1,12 @@
+[      88ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[     248ms] [LOG] [Fast Refresh] done in 160ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[     586ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559
+[    5546ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/800x400?text=Post-graduation%20Visa%20Options:0
+[    6164ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/800x400?text=Preparing%20for%20English%20Proficie:0
+[    6455ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/800x400?text=Life%20as%20an%20International%20Stude:0
+[    7155ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/800x400?text=Top%20Universities%20for%20Study%20Abr:0
+[    7811ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/800x400?text=Financial%20Planning%20for%20Study%20A:0
+[    8541ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/800x400?text=How%20to%20Choose%20the%20Right%20Univer:0
+[    9520ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/800x400?text=Your%20Complete%20Guide%20to%20Visa%20Ap:0
+[   10446ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/800x400?text=Accommodation%20Guide%20for%20Studen:0
+[   10819ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/800x400?text=Making%20the%20Most%20of%20Your%20Exchan:0

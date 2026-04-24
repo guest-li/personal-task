@@ -1,0 +1,18 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - heading "Hello, Admin!" [level=1] [ref=e4]
+      - paragraph [ref=e5]: Sign in to the admin panel
+      - generic [ref=e17]: Access denied — admin accounts only
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]: Email
+          - textbox "Email" [ref=e9]: student@example.com
+        - generic [ref=e10]:
+          - generic [ref=e11]: Password
+          - textbox "Password" [ref=e12]: password123
+        - button "SIGN IN" [ref=e13] [cursor=pointer]
+      - paragraph [ref=e14]:
+        - link "Reset Password" [ref=e15] [cursor=pointer]:
+          - /url: /admin-forgot-password
+  - alert [ref=e16]

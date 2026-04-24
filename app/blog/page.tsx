@@ -1,7 +1,7 @@
 "use client";
 
-import { PublicLayout } from "@/src/components/public/PublicLayout";
-import { SearchBar } from "@/src/components/public/SearchBar";
+import { PublicLayout } from "@/components/public/PublicLayout";
+import { SearchBar } from "@/components/public/SearchBar";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 

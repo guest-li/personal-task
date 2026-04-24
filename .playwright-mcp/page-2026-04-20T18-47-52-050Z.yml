@@ -1,0 +1,83 @@
+- generic [ref=e1]:
+  - alert [ref=e19]
+  - generic [ref=e21]:
+    - complementary [ref=e22]:
+      - button "Toggle sidebar" [active] [ref=e25] [cursor=pointer]: ☰
+      - navigation [ref=e26]:
+        - link "📊" [ref=e137] [cursor=pointer]:
+          - /url: /user/dashboard
+          - generic [ref=e28]: 📊
+        - link "➕" [ref=e138] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e31]: ➕
+        - link "📄" [ref=e139] [cursor=pointer]:
+          - /url: /user/my-application
+          - generic [ref=e34]: 📄
+        - link "🔔" [ref=e140] [cursor=pointer]:
+          - /url: /user/notification
+          - generic [ref=e37]: 🔔
+    - banner [ref=e39]:
+      - textbox "Search..." [ref=e41]
+      - generic [ref=e42]:
+        - button "🔔 1" [ref=e43] [cursor=pointer]:
+          - text: 🔔
+          - generic [ref=e44]: "1"
+        - button "J John Partner" [ref=e46] [cursor=pointer]:
+          - generic [ref=e47]: J
+          - generic [ref=e48]: John Partner
+    - main [ref=e49]:
+      - generic [ref=e51]:
+        - heading "Dashboard" [level=1] [ref=e52]
+        - generic [ref=e53]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: 📄
+            - generic [ref=e57]:
+              - paragraph [ref=e58]: Applications
+              - paragraph [ref=e59]: "0"
+          - generic [ref=e61]:
+            - generic [ref=e62]: 💰
+            - generic [ref=e63]:
+              - paragraph [ref=e64]: Application Fees Paid
+              - paragraph [ref=e65]: $0.00
+          - generic [ref=e67]:
+            - generic [ref=e68]: 📋
+            - generic [ref=e69]:
+              - paragraph [ref=e70]: Total Service Charge
+              - paragraph [ref=e71]: $0.00
+          - generic [ref=e73]:
+            - generic [ref=e74]: 📁
+            - generic [ref=e75]:
+              - paragraph [ref=e76]: Service Charge Paid
+              - paragraph [ref=e77]: $0.00
+          - generic [ref=e79]:
+            - generic [ref=e80]: 🏅
+            - generic [ref=e81]:
+              - paragraph [ref=e82]: Your Level
+              - paragraph [ref=e83]: Advanced
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - heading "Applications History" [level=2] [ref=e86]
+            - generic [ref=e88]:
+              - list [ref=e90]:
+                - listitem [ref=e91]:
+                  - img "Applications legend icon" [ref=e92]
+                  - text: Applications
+                - listitem [ref=e94]:
+                  - img "Approved legend icon" [ref=e95]
+                  - text: Approved
+              - application [ref=e97]
+          - generic [ref=e103]:
+            - heading "Summary" [level=2] [ref=e104]
+            - application [ref=e107]:
+              - generic [ref=e119]:
+                - generic [ref=e120]:
+                  - generic [ref=e142]: Applications
+                  - generic [ref=e144]: Service Charge
+                  - generic [ref=e146]: Application Fees
+                - generic [ref=e125]:
+                  - generic [ref=e127]: "0"
+                  - generic [ref=e129]: "1"
+                  - generic [ref=e131]: "2"
+                  - generic [ref=e133]: "3"
+                  - generic [ref=e135]: "4"
+  - generic [ref=e136]: Charge

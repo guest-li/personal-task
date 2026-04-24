@@ -1,0 +1,101 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e21]
+  - generic [ref=e22]:
+    - complementary [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]: EduConsult
+        - button "Toggle sidebar" [ref=e26] [cursor=pointer]: ☰
+      - navigation [ref=e27]:
+        - link "📊 Dashboard" [ref=e28] [cursor=pointer]:
+          - /url: /user/dashboard
+          - generic [ref=e29]: 📊
+          - generic [ref=e30]: Dashboard
+        - link "📄 My Application" [ref=e31] [cursor=pointer]:
+          - /url: /user/my-application
+          - generic [ref=e32]: 📄
+          - generic [ref=e33]: My Application
+        - link "📅 My Events" [ref=e34] [cursor=pointer]:
+          - /url: /user/my-event
+          - generic [ref=e35]: 📅
+          - generic [ref=e36]: My Events
+        - link "👤 Edit Profile" [ref=e37] [cursor=pointer]:
+          - /url: /user/profile/865e5283-3863-432e-9c80-9f8053b7157b
+          - generic [ref=e38]: 👤
+          - generic [ref=e39]: Edit Profile
+        - link "🔔 Notification" [ref=e40] [cursor=pointer]:
+          - /url: /user/notification
+          - generic [ref=e41]: 🔔
+          - generic [ref=e42]: Notification
+    - banner [ref=e43]:
+      - textbox "Search..." [ref=e45]
+      - generic [ref=e46]:
+        - button "🔔 2" [ref=e47] [cursor=pointer]:
+          - text: 🔔
+          - generic [ref=e48]: "2"
+        - button "J Jane Student" [ref=e50] [cursor=pointer]:
+          - generic [ref=e51]: J
+          - generic [ref=e52]: Jane Student
+    - main [ref=e53]:
+      - generic [ref=e55]:
+        - heading "Dashboard" [level=1] [ref=e56]
+        - generic [ref=e57]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: 📄
+            - generic [ref=e61]:
+              - paragraph [ref=e62]: Applications
+              - paragraph [ref=e63]: "3"
+          - generic [ref=e65]:
+            - generic [ref=e66]: 💰
+            - generic [ref=e67]:
+              - paragraph [ref=e68]: Application Fees Paid
+              - paragraph [ref=e69]: $250.00
+          - generic [ref=e71]:
+            - generic [ref=e72]: 📋
+            - generic [ref=e73]:
+              - paragraph [ref=e74]: Total Service Charge
+              - paragraph [ref=e75]: $175.00
+          - generic [ref=e77]:
+            - generic [ref=e78]: 📁
+            - generic [ref=e79]:
+              - paragraph [ref=e80]: Service Charge Paid
+              - paragraph [ref=e81]: $100.00
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - heading "Applications History" [level=2] [ref=e84]
+            - generic [ref=e86]:
+              - generic:
+                - status:
+                  - paragraph: 2026-04
+                  - list:
+                    - listitem: "Applications : 3"
+                    - listitem: "Approved : 1"
+              - list [ref=e88]:
+                - listitem [ref=e89]:
+                  - img "Applications legend icon" [ref=e90]
+                  - text: Applications
+                - listitem [ref=e92]:
+                  - img "Approved legend icon" [ref=e93]
+                  - text: Approved
+              - application [ref=e95]:
+                - generic [ref=e115]:
+                  - generic [ref=e118]: 2026-04
+                  - generic [ref=e119]:
+                    - generic [ref=e121]: "0"
+                    - generic [ref=e123]: "0.75"
+                    - generic [ref=e125]: "1.5"
+                    - generic [ref=e127]: "2.25"
+                    - generic [ref=e129]: "3"
+          - generic [ref=e130]:
+            - heading "Summary" [level=2] [ref=e131]
+            - application [ref=e134]:
+              - generic [ref=e159]:
+                - generic [ref=e160]:
+                  - generic [ref=e162]: Applications
+                  - generic [ref=e164]: Application Fees
+                - generic [ref=e165]:
+                  - generic [ref=e167]: "0"
+                  - generic [ref=e169]: "65"
+                  - generic [ref=e171]: "130"
+                  - generic [ref=e173]: "195"
+                  - generic [ref=e175]: "260"
+  - generic [ref=e176]: "65"

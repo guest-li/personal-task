@@ -1,0 +1,270 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "Apply Now" [ref=e3] [cursor=pointer]:
+      - /url: https://malishaedu.com/course_list
+    - link "Get A Free Consultation" [ref=e4] [cursor=pointer]:
+      - /url: https://malishaedu.com/get-free-consultation
+      - text: Get A Free
+      - text: Consultation
+  - button "" [ref=e5] [cursor=pointer]:
+    - generic [ref=e6]: 
+  - banner [ref=e7]:
+    - link "The 3rd Belt and Road Chinese University & Overseas Partner Exchange Conference✨" [ref=e9] [cursor=pointer]:
+      - /url: https://malishaedu.com/expo/details/4ea9cf3c
+    - navigation [ref=e10]:
+      - generic [ref=e11]:
+        - link "Logo-MalishaEdu" [ref=e12] [cursor=pointer]:
+          - /url: https://malishaedu.com
+          - img "Logo-MalishaEdu" [ref=e13]
+        - generic [ref=e14]:
+          - list [ref=e16]:
+            - listitem [ref=e17]:
+              - link "Home" [ref=e18] [cursor=pointer]:
+                - /url: https://malishaedu.com
+            - listitem [ref=e19]:
+              - link "Partner Universities" [ref=e20] [cursor=pointer]:
+                - /url: https://malishaedu.com/list/all-universities
+            - listitem [ref=e21]:
+              - link "Scholarship" [ref=e22] [cursor=pointer]:
+                - /url: https://malishaedu.com/scholarship
+            - listitem [ref=e23]:
+              - link "Services " [ref=e24] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e25]:
+              - link "Expo " [ref=e26] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e27]:
+              - link "About " [ref=e28] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e29]:
+              - link "More " [ref=e30] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e31]:
+              - link "Contact " [ref=e32] [cursor=pointer]:
+                - /url: javascript:void(0)
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - link "Login" [ref=e36] [cursor=pointer]:
+                - /url: https://malishaedu.com/sign-in
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - heading "Hey there! Welcome back." [level=2] [ref=e43]:
+        - text: Hey there!
+        - text: Welcome back.
+      - generic [ref=e44]:
+        - text: Login as
+        - strong [ref=e45]:
+          - link "Partner" [ref=e46] [cursor=pointer]:
+            - /url: https://malishaedu.com/partner-sign-in
+      - img "image" [ref=e47]
+    - generic [ref=e48]:
+      - generic [ref=e49]: Please login first.
+      - heading "Student Sign in" [level=4] [ref=e50]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]: Email address
+          - textbox "Email address" [active] [ref=e54]:
+            - /placeholder: Enter your Email
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e57]: Password
+            - link:
+              - /url: "#"
+          - textbox "Password" [ref=e58]:
+            - /placeholder: Enter password
+          - link "" [ref=e60] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e62]: 
+        - generic [ref=e64]:
+          - checkbox "Stay logged in for 30 days" [checked] [ref=e65]
+          - generic [ref=e66]: Stay logged in for 30 days
+        - button "Sign in" [ref=e67] [cursor=pointer]
+      - link "Forgot Password ?" [ref=e69] [cursor=pointer]:
+        - /url: https://malishaedu.com/forgot-password
+        - strong [ref=e70]: Forgot Password ?
+      - generic [ref=e71]:
+        - text: Don't have an account?
+        - strong [ref=e72]:
+          - link "Create an Account" [ref=e73] [cursor=pointer]:
+            - /url: https://malishaedu.com/register
+  - generic [ref=e75]:
+    - generic [ref=e77]:
+      - heading "Latest Updates" [level=2] [ref=e78]
+      - separator [ref=e79]
+    - generic [ref=e80]:
+      - generic [ref=e83] [cursor=pointer]:
+        - paragraph [ref=e85]:
+          - img [ref=e86]
+          - text: 30 Aug, 2024
+        - heading "Scholarships in China for International Students" [level=4] [ref=e89]
+      - generic [ref=e91]:
+        - generic [ref=e92] [cursor=pointer]:
+          - generic [ref=e93]:
+            - generic [ref=e95]: "24"
+            - generic [ref=e96]: Mar
+          - heading "MalishaEdu Hosts “Study in China” Education Exhibition at Chulalongkorn University, Bangkok, Thailan..." [level=4] [ref=e98]
+        - generic [ref=e99] [cursor=pointer]:
+          - generic [ref=e100]:
+            - generic [ref=e102]: "14"
+            - generic [ref=e103]: Mar
+          - heading "Strengthening International Education Partnership with Central South University of Forestry and Tech..." [level=4] [ref=e105]
+        - generic [ref=e106] [cursor=pointer]:
+          - generic [ref=e107]:
+            - generic [ref=e109]: "25"
+            - generic [ref=e110]: Jan
+          - heading "MalishaEdu Facilitates Tianjin University Spot Admission Program at National Academy for Educational..." [level=4] [ref=e112]
+        - generic [ref=e113] [cursor=pointer]:
+          - generic [ref=e114]:
+            - generic [ref=e116]: "25"
+            - generic [ref=e117]: Jan
+          - heading "MalishaEdu Hosts Tianjin University Spot Admission Program at Bangladesh University of Engineering &..." [level=4] [ref=e119]
+  - contentinfo [ref=e120]:
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - heading "Quick Links" [level=4] [ref=e125]
+          - list [ref=e126]:
+            - listitem [ref=e127]:
+              - link "About CSCA" [ref=e128] [cursor=pointer]:
+                - /url: https://csca.cn/home
+            - listitem [ref=e129]:
+              - link "About MalishaEdu" [ref=e130] [cursor=pointer]:
+                - /url: https://malishaedu.com/company-details
+            - listitem [ref=e131]:
+              - link "Belt & Road Chinese Center(BRCC)" [ref=e132] [cursor=pointer]:
+                - /url: https://brccbd.com/
+            - listitem [ref=e133]:
+              - link "Belt & Road Initiative" [ref=e134] [cursor=pointer]:
+                - /url: https://eng.yidaiyilu.gov.cn/
+            - listitem [ref=e135]:
+              - link "Chinese Government Scholarship" [ref=e136] [cursor=pointer]:
+                - /url: http://www.csc.edu.cn/studyinchina
+            - listitem [ref=e137]:
+              - link "CIS Scholarship" [ref=e138] [cursor=pointer]:
+                - /url: http://www.chinese.cn/page/#/pcpage/mainpage
+            - listitem [ref=e139]:
+              - link "Leidin Ranking" [ref=e140] [cursor=pointer]:
+                - /url: https://traditional.leidenranking.com/
+            - listitem [ref=e141]:
+              - link "National Immigration Administration(China)" [ref=e142] [cursor=pointer]:
+                - /url: https://en.nia.gov.cn/
+            - listitem [ref=e143]:
+              - link "QS University Ranking" [ref=e144] [cursor=pointer]:
+                - /url: https://www.qschina.cn/en
+            - listitem [ref=e145]:
+              - link "Shanghai University Ranking" [ref=e146] [cursor=pointer]:
+                - /url: https://www.shanghairanking.com/
+            - listitem [ref=e147]:
+              - link "Study in China (CSCSE)" [ref=e148] [cursor=pointer]:
+                - /url: https://www.studyinchina.edu.cn/
+        - generic [ref=e149]:
+          - heading "Explore" [level=4] [ref=e150]
+          - list [ref=e151]:
+            - listitem [ref=e152]:
+              - link "Alipay" [ref=e153] [cursor=pointer]:
+                - /url: https://www.alipay.com/
+            - listitem [ref=e154]:
+              - link "Didi(Sharing Car of China)" [ref=e155] [cursor=pointer]:
+                - /url: https://www.didiglobal.com/
+            - listitem [ref=e156]:
+              - link "Dingtalk" [ref=e157] [cursor=pointer]:
+                - /url: https://www.dingtalk.com/en
+            - listitem [ref=e158]:
+              - link "Douyin(Tiktok Chinese Version)" [ref=e159] [cursor=pointer]:
+                - /url: https://www.douyin.com/
+            - listitem [ref=e160]:
+              - link "JD(Online Shopping Platform)" [ref=e161] [cursor=pointer]:
+                - /url: https://www.jd.com/
+            - listitem [ref=e162]:
+              - link "Meituan (Food Delivery)" [ref=e163] [cursor=pointer]:
+                - /url: https://www.meituan.com/
+            - listitem [ref=e164]:
+              - link "Taobao(Online Shopping Platform)" [ref=e165] [cursor=pointer]:
+                - /url: https://www.taobao.com/
+            - listitem [ref=e166]:
+              - link "WeChat" [ref=e167] [cursor=pointer]:
+                - /url: https://www.wechat.com/
+            - listitem [ref=e168]:
+              - link "Why China" [ref=e169] [cursor=pointer]:
+                - /url: https://malishaedu.com/why-china
+            - listitem [ref=e170]:
+              - link "Youku(For all videos)" [ref=e171] [cursor=pointer]:
+                - /url: https://www.youku.com/
+        - generic [ref=e172]:
+          - heading "Policies" [level=4] [ref=e173]
+          - list [ref=e174]:
+            - listitem [ref=e175]:
+              - link "Privacy Policy" [ref=e176] [cursor=pointer]:
+                - /url: https://malishaedu.com/privacy-policy
+            - listitem [ref=e177]:
+              - link "Refund Policy" [ref=e178] [cursor=pointer]:
+                - /url: https://malishaedu.com/refund-policy
+            - listitem [ref=e179]:
+              - link "Terms & Conditions" [ref=e180] [cursor=pointer]:
+                - /url: https://malishaedu.com/terms-conditions
+        - generic [ref=e182]:
+          - heading "Our Payment Modes" [level=4] [ref=e183]
+          - generic [ref=e184]:
+            - link "WeChat" [ref=e185] [cursor=pointer]:
+              - /url: https://malishaedu.com/payment-process
+              - img "WeChat" [ref=e186]
+            - link "Visa" [ref=e187] [cursor=pointer]:
+              - /url: https://malishaedu.com/payment-process
+              - img "Visa" [ref=e188]
+            - link "Mastercard" [ref=e189] [cursor=pointer]:
+              - /url: https://malishaedu.com/payment-process
+              - img "Mastercard" [ref=e190]
+            - link "Paypal" [ref=e191] [cursor=pointer]:
+              - /url: https://malishaedu.com/payment-process
+              - img "Paypal" [ref=e192]
+            - link "Unionpay" [ref=e193] [cursor=pointer]:
+              - /url: https://malishaedu.com/payment-process
+              - img "Unionpay" [ref=e194]
+            - link "Alipay" [ref=e195] [cursor=pointer]:
+              - /url: https://malishaedu.com/payment-process
+              - img "Alipay" [ref=e196]
+      - generic [ref=e197]:
+        - heading "Stay Connected" [level=4] [ref=e198]
+        - generic [ref=e199]:
+          - generic [ref=e201]:
+            - textbox "Email" [ref=e202]
+            - button "Subscribe" [ref=e203] [cursor=pointer]
+          - generic [ref=e204]:
+            - generic [ref=e205]:
+              - paragraph [ref=e206]: WeChat
+              - img "malishaedu" [ref=e207]
+            - generic [ref=e208]:
+              - paragraph [ref=e209]: Whatsapp
+              - img "malishaedu-whatsapp-business" [ref=e210]
+        - heading "Hotline  +8618613114366" [level=4] [ref=e213]:
+          - text: Hotline
+          - list [ref=e214]:
+            - listitem [ref=e215]:
+              - generic [ref=e216]: 
+              - link "+8618613114366" [ref=e217] [cursor=pointer]:
+                - /url: tel:+8618613114366
+        - list [ref=e219]:
+          - listitem [ref=e220]:
+            - generic [ref=e221]: 
+            - link "info@malishaedu.com" [ref=e222] [cursor=pointer]:
+              - /url: mailto:info@malishaedu.com
+        - generic [ref=e223]:
+          - heading "Follow Us" [level=4] [ref=e224]
+          - generic [ref=e227]:
+            - img [ref=e230] [cursor=pointer]
+            - img [ref=e234] [cursor=pointer]
+            - img [ref=e238] [cursor=pointer]
+            - img [ref=e242] [cursor=pointer]
+            - img [ref=e246] [cursor=pointer]
+            - img [ref=e249] [cursor=pointer]
+            - img [ref=e252] [cursor=pointer]
+            - img [ref=e255] [cursor=pointer]
+            - img [ref=e258] [cursor=pointer]
+      - generic [ref=e259]:
+        - separator [ref=e260]
+        - paragraph [ref=e261]:
+          - text: ©2026
+          - link "MalishaEdu" [ref=e262] [cursor=pointer]:
+            - /url: "#"
+          - text: . All Rights Reserved
+  - generic [ref=e264]: Please login first.

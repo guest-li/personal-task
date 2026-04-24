@@ -1,0 +1,13 @@
+[     331ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/vendors/iconfonts/font-awesome/webfonts/fa-solid-900.html @ https://malishaedu.com/user/dashboard:395
+[     331ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/user/dashboard:395
+[     331ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/user/dashboard' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/user/dashboard:395
+[     331ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/user/dashboard' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/user/dashboard:395
+[     331ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/user/dashboard' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/user/dashboard:395
+[     331ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/user/dashboard' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/user/dashboard:395
+[     331ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/user/dashboard' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/user/dashboard:395
+[     405ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/vendors/iconfonts/font-awesome/webfonts/fa-solid-900.html @ https://malishaedu.com/user/dashboard:660
+[     405ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/user/dashboard:660
+[     410ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/fonts/PT_Sans/PTSans-Bold.html @ https://malishaedu.com/user/dashboard:660
+[     410ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/user/dashboard:660
+[     410ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/fonts/PT_Sans/PTSans-Bold.html @ https://malishaedu.com/user/dashboard:660
+[     410ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/user/dashboard:660

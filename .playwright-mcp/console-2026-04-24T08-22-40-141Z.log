@@ -1,0 +1,375 @@
+[     892ms] [ERROR] ./app/universities/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/public/PublicLayout'
+  1 | "use client";
+  2 |
+> 3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+    | ^
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[     892ms] [ERROR] ./app/universities/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/public/CatalogCard'
+  2 |
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+> 4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+    | ^
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[     892ms] [ERROR] ./app/universities/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/public/SearchBar'
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+> 5 | import { SearchBar } from "@/src/components/public/SearchBar";
+    | ^
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[     892ms] [ERROR] ./app/universities/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/public/FilterBar'
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+> 6 | import { FilterBar } from "@/src/components/public/FilterBar";
+    | ^
+  7 | import { useState, useEffect } from "react";
+  8 |
+  9 | export default function UniversitiesPage() {
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[     892ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[    1134ms] [ERROR] ./app/universities/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/public/PublicLayout'
+  1 | "use client";
+  2 |
+> 3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+    | ^
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1134ms] [ERROR] ./app/universities/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/public/CatalogCard'
+  2 |
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+> 4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+    | ^
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1135ms] [ERROR] ./app/universities/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/public/SearchBar'
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+> 5 | import { SearchBar } from "@/src/components/public/SearchBar";
+    | ^
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1135ms] [ERROR] ./app/universities/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/public/FilterBar'
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+> 6 | import { FilterBar } from "@/src/components/public/FilterBar";
+    | ^
+  7 | import { useState, useEffect } from "react";
+  8 |
+  9 | export default function UniversitiesPage() {
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1135ms] [ERROR] ./app/[...pages]/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/public/PublicLayout'
+> 1 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+    | ^
+  2 | import Link from "next/link";
+  3 |
+  4 | const staticPages: Record<string, any> = {
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1135ms] [ERROR] ./app/universities/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/public/PublicLayout'
+  1 | "use client";
+  2 |
+> 3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+    | ^
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1135ms] [ERROR] ./app/universities/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/public/CatalogCard'
+  2 |
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+> 4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+    | ^
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1135ms] [ERROR] ./app/universities/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/public/SearchBar'
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+> 5 | import { SearchBar } from "@/src/components/public/SearchBar";
+    | ^
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1135ms] [ERROR] ./app/universities/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/public/FilterBar'
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+> 6 | import { FilterBar } from "@/src/components/public/FilterBar";
+    | ^
+  7 | import { useState, useEffect } from "react";
+  8 |
+  9 | export default function UniversitiesPage() {
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1211ms] [ERROR] ./app/universities/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/public/PublicLayout'
+  1 | "use client";
+  2 |
+> 3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+    | ^
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1211ms] [ERROR] ./app/universities/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/public/CatalogCard'
+  2 |
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+> 4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+    | ^
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1211ms] [ERROR] ./app/universities/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/public/SearchBar'
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+> 5 | import { SearchBar } from "@/src/components/public/SearchBar";
+    | ^
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1211ms] [ERROR] ./app/universities/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/public/FilterBar'
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+> 6 | import { FilterBar } from "@/src/components/public/FilterBar";
+    | ^
+  7 | import { useState, useEffect } from "react";
+  8 |
+  9 | export default function UniversitiesPage() {
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1293ms] [ERROR] ./app/universities/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/public/PublicLayout'
+  1 | "use client";
+  2 |
+> 3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+    | ^
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1293ms] [ERROR] ./app/universities/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/public/CatalogCard'
+  2 |
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+> 4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+    | ^
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1293ms] [ERROR] ./app/universities/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/public/SearchBar'
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+> 5 | import { SearchBar } from "@/src/components/public/SearchBar";
+    | ^
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1293ms] [ERROR] ./app/universities/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/public/FilterBar'
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+> 6 | import { FilterBar } from "@/src/components/public/FilterBar";
+    | ^
+  7 | import { useState, useEffect } from "react";
+  8 |
+  9 | export default function UniversitiesPage() {
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1293ms] [ERROR] ./app/[...pages]/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/public/PublicLayout'
+> 1 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+    | ^
+  2 | import Link from "next/link";
+  3 |
+  4 | const staticPages: Record<string, any> = {
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1469ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/_next/static/webpack/f686362c2e68d37e.webpack.hot-update.json:0
+[    1469ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:347
+[    1481ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/universities:0
+[    1720ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[    1736ms] Error: Module not found: Can't resolve '@/src/components/public/PublicLayout'
+  1 | "use client";
+  2 |
+> 3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+    | ^
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+
+https://nextjs.org/docs/messages/module-not-found
+
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at getNotFoundError (file:///Users/lizhao/Documents/code/job/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/parseNotFoundError.js:124:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getModuleBuildError (file:///Users/lizhao/Documents/code/job/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js:104:27)
+    at async (file:///Users/lizhao/Documents/code/job/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:29:49)
+    at async (file:///Users/lizhao/Documents/code/job/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:27:21)
+[    1734ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[    1735ms] [ERROR] ./app/universities/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/public/PublicLayout'
+  1 | "use client";
+  2 |
+> 3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+    | ^
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1736ms] [ERROR] ./app/universities/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/public/CatalogCard'
+  2 |
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+> 4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+    | ^
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1736ms] [ERROR] ./app/universities/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/public/SearchBar'
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+> 5 | import { SearchBar } from "@/src/components/public/SearchBar";
+    | ^
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1736ms] [ERROR] ./app/universities/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/public/FilterBar'
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+> 6 | import { FilterBar } from "@/src/components/public/FilterBar";
+    | ^
+  7 | import { useState, useEffect } from "react";
+  8 |
+  9 | export default function UniversitiesPage() {
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1736ms] [ERROR] ./app/[...pages]/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/public/PublicLayout'
+> 1 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+    | ^
+  2 | import Link from "next/link";
+  3 |
+  4 | const staticPages: Record<string, any> = {
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   20713ms] [ERROR] ./app/universities/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/public/PublicLayout'
+  1 | "use client";
+  2 |
+> 3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+    | ^
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   20714ms] [ERROR] ./app/universities/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/public/CatalogCard'
+  2 |
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+> 4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+    | ^
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   20714ms] [ERROR] ./app/universities/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/public/SearchBar'
+  3 | import { PublicLayout } from "@/src/components/public/PublicLayout";
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+> 5 | import { SearchBar } from "@/src/components/public/SearchBar";
+    | ^
+  6 | import { FilterBar } from "@/src/components/public/FilterBar";
+  7 | import { useState, useEffect } from "react";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   20714ms] [ERROR] ./app/universities/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/public/FilterBar'
+  4 | import { CatalogCard } from "@/src/components/public/CatalogCard";
+  5 | import { SearchBar } from "@/src/components/public/SearchBar";
+> 6 | import { FilterBar } from "@/src/components/public/FilterBar";
+    | ^
+  7 | import { useState, useEffect } from "react";
+  8 |
+  9 | export default function UniversitiesPage() {
+
+https://nextjs.org/docs/messages/module-not-found @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   21063ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   21933ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:347
+[   22301ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559

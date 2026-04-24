@@ -1,0 +1,20 @@
+[     283ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/login' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/login:16
+[     283ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/login' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/login:16
+[     283ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/login' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/login:16
+[     283ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/login' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/login:16
+[     283ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/login' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/login:16
+[     300ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/fonts/PT_Sans/PTSans-Bold.html @ https://malishaedu.com/login:0
+[     300ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/login:0
+[     351ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/fonts/PT_Sans/PTSans-Bold.html @ https://malishaedu.com/login:62
+[     351ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/login:62
+[     354ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://malishaedu.com/login:0
+[  105633ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/login' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/login:16
+[  105633ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/login' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/login:16
+[  105633ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/login' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/login:16
+[  105633ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/login' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/login:16
+[  105633ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/login' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/login:16
+[  105642ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/fonts/PT_Sans/PTSans-Bold.html @ https://malishaedu.com/login:0
+[  105642ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/login:0
+[  105700ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/fonts/PT_Sans/PTSans-Bold.html @ https://malishaedu.com/login:62
+[  105700ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/login:62
+[  105702ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://malishaedu.com/login:0

@@ -1,6 +1,6 @@
 "use client";
 
-import { PublicLayout } from "@/src/components/public/PublicLayout";
+import { PublicLayout } from "@/components/public/PublicLayout";
 import { useState } from "react";
 
 export default function ContactPage() {

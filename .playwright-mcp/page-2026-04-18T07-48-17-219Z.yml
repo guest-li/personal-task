@@ -1,0 +1,57 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "logo" [ref=e5] [cursor=pointer]:
+      - /url: https://malishaedu.com
+      - img "logo" [ref=e6]
+    - generic [ref=e7]:
+      - button "" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: 
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - generic [ref=e13]:
+            - generic [ref=e16]: 
+            - textbox "Search" [ref=e17]
+      - list [ref=e18]:
+        - listitem [ref=e19]:
+          - link " 0" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e21]: 
+            - generic [ref=e22]: "0"
+        - listitem [ref=e23]:
+          - link "Summer Summer" [ref=e24] [cursor=pointer]:
+            - /url: "#"
+            - text: Summer
+            - img "Summer" [ref=e25]
+          - text:  
+      - text: 
+  - generic [ref=e26]:
+    - navigation [ref=e27]:
+      - list [ref=e28]:
+        - listitem [ref=e29]:
+          - link " Dashboard" [ref=e30] [cursor=pointer]:
+            - /url: https://malishaedu.com/user/dashboard
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Dashboard
+        - listitem [ref=e33]:
+          - link " My Application" [ref=e34] [cursor=pointer]:
+            - /url: https://malishaedu.com/user/my-applications
+            - generic [ref=e35]: 
+            - generic [ref=e36]: My Application
+        - listitem [ref=e37]:
+          - link " Apply For New" [ref=e38] [cursor=pointer]:
+            - /url: https://malishaedu.com/list/all-universities
+            - generic [ref=e39]: 
+            - generic [ref=e40]: Apply For New
+        - listitem [ref=e41]:
+          - link " Notification" [ref=e42] [cursor=pointer]:
+            - /url: https://malishaedu.com/user/notification
+            - generic [ref=e43]: 
+            - generic [ref=e44]: Notification
+    - generic [ref=e45]:
+      - heading "My Notification" [level=3] [ref=e48]
+      - contentinfo [ref=e51]:
+        - generic [ref=e53]:
+          - text: Copyright © 2026
+          - link "MalishaEdu" [ref=e54] [cursor=pointer]:
+            - /url: https://malishaedu.com
+          - text: . All rights reserved.

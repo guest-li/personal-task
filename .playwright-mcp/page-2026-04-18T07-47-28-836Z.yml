@@ -1,0 +1,123 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - navigation:
+      - generic:
+        - link "logo":
+          - /url: https://malishaedu.com
+          - img "logo"
+      - generic:
+        - button "":
+          - generic: 
+        - list:
+          - listitem:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: 
+                - textbox "Search"
+        - list:
+          - listitem:
+            - link " 0":
+              - /url: "#"
+              - generic: 
+              - generic: "0"
+          - listitem:
+            - link "Summer Summer":
+              - /url: "#"
+              - text: Summer
+              - img "Summer"
+            - text:  
+        - text: 
+    - generic:
+      - navigation:
+        - list:
+          - listitem:
+            - link " Dashboard":
+              - /url: https://malishaedu.com/user/dashboard
+              - generic: 
+              - generic: Dashboard
+          - listitem:
+            - link " My Application":
+              - /url: https://malishaedu.com/user/my-applications
+              - generic: 
+              - generic: My Application
+          - listitem:
+            - link " Apply For New":
+              - /url: https://malishaedu.com/list/all-universities
+              - generic: 
+              - generic: Apply For New
+          - listitem:
+            - link " Notification":
+              - /url: https://malishaedu.com/user/notification
+              - generic: 
+              - generic: Notification
+      - generic:
+        - generic:
+          - generic:
+            - heading "Dashboard" [level=3]
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - heading "Applications" [level=4]
+                  - generic:
+                    - generic:
+                      - heading "0" [level=2]
+                    - generic:
+                      - generic: 
+            - generic:
+              - generic:
+                - generic:
+                  - heading "Total Applications Fees Paid" [level=4]
+                  - generic:
+                    - generic:
+                      - heading "0" [level=2]
+                    - generic:
+                      - generic: 
+            - generic:
+              - generic:
+                - generic:
+                  - heading "Total Service Charge" [level=4]
+                  - generic:
+                    - generic:
+                      - heading "0" [level=2]
+                    - generic:
+                      - generic: 
+            - generic:
+              - generic:
+                - generic:
+                  - heading "Total Service Charge Paid" [level=4]
+                  - generic:
+                    - generic:
+                      - heading "0" [level=2]
+                    - generic:
+                      - generic: 
+            - generic:
+              - generic:
+                - generic:
+                  - heading "Your Level" [level=4]
+                  - generic:
+                    - generic:
+                      - heading "Beginner" [level=2]
+                    - generic:
+                      - generic: 
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - heading "Applications History Diagram" [level=4]
+            - generic:
+              - generic:
+                - generic:
+                  - heading "Summary" [level=4]
+        - contentinfo:
+          - generic:
+            - generic:
+              - text: Copyright © 2026
+              - link "MalishaEdu":
+                - /url: https://malishaedu.com
+              - text: . All rights reserved.
+  - generic [ref=e3]:
+    - heading "Your account is inactive" [level=2] [ref=e4]
+    - paragraph [ref=e5]: Please contact the administrator to activate your account.

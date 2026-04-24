@@ -1,0 +1,98 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - generic [ref=e5]:
+          - link "MalishaEdu" [ref=e6] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e7]:
+            - button "Services" [ref=e9] [cursor=pointer]
+            - button "About" [ref=e11] [cursor=pointer]
+            - link "Blog" [ref=e12] [cursor=pointer]:
+              - /url: /blog
+            - link "Contact" [ref=e13] [cursor=pointer]:
+              - /url: /contact
+            - combobox [ref=e14]:
+              - option "English" [selected]
+              - option "中文"
+              - option "বাংলা"
+            - link "Get Consultation" [ref=e15] [cursor=pointer]:
+              - /url: /get-free-consultation
+    - main [ref=e16]:
+      - generic [ref=e17]:
+        - heading "Universities in China" [level=1] [ref=e18]
+        - generic [ref=e21]:
+          - textbox "Search universities, courses..." [ref=e22]
+          - button "Search" [ref=e23] [cursor=pointer]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Province
+            - textbox "Filter by province" [ref=e29]
+          - button "Clear All" [ref=e30] [cursor=pointer]
+        - paragraph [ref=e32]: Loading universities...
+    - contentinfo [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - heading "Quick Links" [level=3] [ref=e37]
+            - list [ref=e38]:
+              - listitem [ref=e39]:
+                - link "Universities" [ref=e40] [cursor=pointer]:
+                  - /url: /universities
+              - listitem [ref=e41]:
+                - link "Courses" [ref=e42] [cursor=pointer]:
+                  - /url: /courses
+              - listitem [ref=e43]:
+                - link "Scholarships" [ref=e44] [cursor=pointer]:
+                  - /url: /scholarships
+              - listitem [ref=e45]:
+                - link "Events" [ref=e46] [cursor=pointer]:
+                  - /url: /events
+          - generic [ref=e47]:
+            - heading "Services" [level=3] [ref=e48]
+            - list [ref=e49]:
+              - listitem [ref=e50]:
+                - link "Admission" [ref=e51] [cursor=pointer]:
+                  - /url: /services/admission-service
+              - listitem [ref=e52]:
+                - link "Language & Foundation" [ref=e53] [cursor=pointer]:
+                  - /url: /services/language-foundation
+              - listitem [ref=e54]:
+                - link "Airport Pickup" [ref=e55] [cursor=pointer]:
+                  - /url: /services/airport-pickup
+              - listitem [ref=e56]:
+                - link "On-Campus Service" [ref=e57] [cursor=pointer]:
+                  - /url: /services/on-campus-service
+          - generic [ref=e58]:
+            - heading "Legal" [level=3] [ref=e59]
+            - list [ref=e60]:
+              - listitem [ref=e61]:
+                - link "Privacy Policy" [ref=e62] [cursor=pointer]:
+                  - /url: /privacy-policy
+              - listitem [ref=e63]:
+                - link "Refund Policy" [ref=e64] [cursor=pointer]:
+                  - /url: /refund-policy
+              - listitem [ref=e65]:
+                - link "Terms & Conditions" [ref=e66] [cursor=pointer]:
+                  - /url: /terms-conditions
+              - listitem [ref=e67]:
+                - link "FAQs" [ref=e68] [cursor=pointer]:
+                  - /url: /faqs
+          - generic [ref=e69]:
+            - heading "Newsletter" [level=3] [ref=e70]
+            - generic [ref=e71]:
+              - textbox "Your email" [ref=e72]
+              - button "Subscribe" [ref=e73] [cursor=pointer]
+            - generic [ref=e74]:
+              - paragraph [ref=e75]: Follow Us
+              - generic [ref=e76]:
+                - link "Facebook" [ref=e77] [cursor=pointer]:
+                  - /url: "#"
+                - link "Twitter" [ref=e78] [cursor=pointer]:
+                  - /url: "#"
+                - link "Instagram" [ref=e79] [cursor=pointer]:
+                  - /url: "#"
+        - generic [ref=e81]:
+          - paragraph [ref=e82]: © 2026 MalishaEdu. All rights reserved.
+          - paragraph [ref=e83]: "Hotline: +8618613114366 | Email: info@malishaedu.com"
+  - alert [ref=e84]

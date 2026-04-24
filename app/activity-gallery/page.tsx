@@ -1,4 +1,4 @@
-import { PublicLayout } from "@/src/components/public/PublicLayout";
+import { PublicLayout } from "@/components/public/PublicLayout";
 
 export const metadata = {
   title: "Activity Gallery",

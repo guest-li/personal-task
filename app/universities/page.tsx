@@ -1,9 +1,9 @@
 "use client";
 
-import { PublicLayout } from "@/src/components/public/PublicLayout";
-import { CatalogCard } from "@/src/components/public/CatalogCard";
-import { SearchBar } from "@/src/components/public/SearchBar";
-import { FilterBar } from "@/src/components/public/FilterBar";
+import { PublicLayout } from "@/components/public/PublicLayout";
+import { CatalogCard } from "@/components/public/CatalogCard";
+import { SearchBar } from "@/components/public/SearchBar";
+import { FilterBar } from "@/components/public/FilterBar";
 import { useState, useEffect } from "react";
 
 export default function UniversitiesPage() {

@@ -1,0 +1,27 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - heading "Student Sign In" [level=1] [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e7]: Email
+          - textbox "Email" [ref=e8]: student1@example.com
+        - generic [ref=e9]:
+          - generic [ref=e10]: Password
+          - textbox "Password" [ref=e11]: password123
+        - generic [ref=e12]:
+          - generic [ref=e13]:
+            - checkbox "Stay logged in 30 days" [ref=e14]
+            - text: Stay logged in 30 days
+          - link "Forgot password?" [ref=e15] [cursor=pointer]:
+            - /url: /forgot-password
+        - button "SIGN IN" [ref=e16] [cursor=pointer]
+      - paragraph [ref=e17]:
+        - text: Don't have an account?
+        - link "Register" [ref=e18] [cursor=pointer]:
+          - /url: /register
+      - paragraph [ref=e19]:
+        - text: Are you a partner?
+        - link "Partner Sign In" [ref=e20] [cursor=pointer]:
+          - /url: /partner-sign-in
+  - alert [ref=e21]

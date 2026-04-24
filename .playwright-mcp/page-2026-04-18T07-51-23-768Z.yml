@@ -1,0 +1,10 @@
+- generic [ref=e7]:
+  - img "logo" [ref=e9]
+  - heading "Hello, Admin!" [level=4] [ref=e10]
+  - heading "Sign in to continue." [level=6] [ref=e11]
+  - generic [ref=e12]:
+    - textbox "Email" [ref=e14]: zhaolia004@163.com
+    - textbox "Password" [ref=e16]: test1234
+    - button "SIGN IN" [ref=e18] [cursor=pointer]
+  - link "Reset Password" [ref=e20] [cursor=pointer]:
+    - /url: https://malishaedu.com/admin-forgot-password

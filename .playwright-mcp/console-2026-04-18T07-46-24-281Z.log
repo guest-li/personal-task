@@ -1,0 +1,17 @@
+[    9298ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://malishaedu.com/sign-in:0
+[   14114ms] [ERROR] true @ https://embed.tawk.to/_s/v4/app/69e0c09cf0a/js/twk-chunk-common.js:1
+[   14498ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://malishaedu.com/partner-sign-in:0
+[   35703ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://malishaedu.comadmin/login-process:0
+[   37832ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/user/dashboard' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/user/dashboard:0
+[   37832ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/user/dashboard' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/user/dashboard:0
+[   37832ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/user/dashboard' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/user/dashboard:0
+[   37833ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/user/dashboard' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/user/dashboard:0
+[   37833ms] [ERROR] Mixed Content: The page at 'https://malishaedu.com/user/dashboard' was loaded over HTTPS, but requested an insecure font 'http://www.urbanui.com/'. This request has been blocked; the content must be served over HTTPS. @ https://malishaedu.com/user/dashboard:0
+[   38637ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/vendors/iconfonts/font-awesome/webfonts/fa-solid-900.html @ https://malishaedu.com/user/dashboard:0
+[   38637ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/user/dashboard:0
+[   38639ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/fonts/PT_Sans/PTSans-Bold.html @ https://malishaedu.com/user/dashboard:0
+[   38640ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/user/dashboard:0
+[   38797ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/vendors/iconfonts/font-awesome/webfonts/fa-solid-900.html @ https://malishaedu.com/user/dashboard:659
+[   38797ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/user/dashboard:659
+[   38797ms] [WARNING] Failed to decode downloaded font: https://malishaedu.com/backend/assets/fonts/PT_Sans/PTSans-Bold.html @ https://malishaedu.com/user/dashboard:659
+[   38797ms] [WARNING] OTS parsing error: Failed to convert WOFF 2.0 font to SFNT @ https://malishaedu.com/user/dashboard:659

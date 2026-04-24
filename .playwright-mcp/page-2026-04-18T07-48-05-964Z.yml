@@ -1,0 +1,97 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "logo" [ref=e5] [cursor=pointer]:
+      - /url: https://malishaedu.com
+      - img "logo" [ref=e6]
+    - generic [ref=e7]:
+      - button "" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: 
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - generic [ref=e13]:
+            - generic [ref=e16]: 
+            - textbox "Search" [ref=e17]
+      - list [ref=e18]:
+        - listitem [ref=e19]:
+          - link " 0" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e21]: 
+            - generic [ref=e22]: "0"
+        - listitem [ref=e23]:
+          - link "Summer Summer" [ref=e24] [cursor=pointer]:
+            - /url: "#"
+            - text: Summer
+            - img "Summer" [ref=e25]
+          - text:  
+      - text: 
+  - generic [ref=e26]:
+    - navigation [ref=e27]:
+      - list [ref=e28]:
+        - listitem [ref=e29]:
+          - link " Dashboard" [ref=e30] [cursor=pointer]:
+            - /url: https://malishaedu.com/user/dashboard
+            - generic [ref=e31]: 
+            - generic [ref=e32]: Dashboard
+        - listitem [ref=e33]:
+          - link " My Application" [ref=e34] [cursor=pointer]:
+            - /url: https://malishaedu.com/user/my-applications
+            - generic [ref=e35]: 
+            - generic [ref=e36]: My Application
+        - listitem [ref=e37]:
+          - link " Apply For New" [ref=e38] [cursor=pointer]:
+            - /url: https://malishaedu.com/list/all-universities
+            - generic [ref=e39]: 
+            - generic [ref=e40]: Apply For New
+        - listitem [ref=e41]:
+          - link " Notification" [ref=e42] [cursor=pointer]:
+            - /url: https://malishaedu.com/user/notification
+            - generic [ref=e43]: 
+            - generic [ref=e44]: Notification
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - heading "My Applications" [level=3] [ref=e48]
+          - navigation "breadcrumb" [ref=e49]:
+            - generic [ref=e50]:
+              - button "Manage Fields" [ref=e51] [cursor=pointer]
+              - button "Manage Filters" [ref=e52] [cursor=pointer]
+        - generic [ref=e53]:
+          - combobox [ref=e54]
+          - combobox "Select Fund Type" [ref=e57] [cursor=pointer]:
+            - generic "Select Fund Type" [ref=e58]
+          - combobox [ref=e59]
+          - combobox "Select Status" [ref=e62] [cursor=pointer]:
+            - generic "Select Status" [ref=e63]
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - button "Excel" [ref=e68]
+            - button "PDF" [ref=e69]
+            - button "Print" [ref=e70]
+          - searchbox [ref=e73]
+          - grid [ref=e74]:
+            - rowgroup [ref=e75]:
+              - 'row "SL: activate to sort column descending Application Code: activate to sort column ascending Program Name: activate to sort column ascending University: activate to sort column ascending Status: activate to sort column ascending Action: activate to sort column ascending" [ref=e76]':
+                - 'columnheader "SL: activate to sort column descending" [ref=e77] [cursor=pointer]':  SL 
+                - 'columnheader "Application Code: activate to sort column ascending" [ref=e78] [cursor=pointer]':  Application Code 
+                - 'columnheader "Program Name: activate to sort column ascending" [ref=e79] [cursor=pointer]':  Program Name 
+                - 'columnheader "University: activate to sort column ascending" [ref=e80] [cursor=pointer]':  University 
+                - 'columnheader "Status: activate to sort column ascending" [ref=e81] [cursor=pointer]':  Status 
+                - 'columnheader "Action: activate to sort column ascending" [ref=e82] [cursor=pointer]':  Action 
+            - rowgroup [ref=e83]:
+              - row "No data available in table" [ref=e84]:
+                - gridcell "No data available in table" [ref=e85]
+          - status [ref=e86]: Showing 0 to 0 of 0 entries
+          - list [ref=e88]:
+            - listitem [ref=e89]:
+              - link "Previous":
+                - /url: "#"
+            - listitem [ref=e90]:
+              - link "Next":
+                - /url: "#"
+      - text:                
+      - contentinfo [ref=e91]:
+        - generic [ref=e93]:
+          - text: Copyright © 2026
+          - link "MalishaEdu" [ref=e94] [cursor=pointer]:
+            - /url: https://malishaedu.com
+          - text: . All rights reserved.
