@@ -201,17 +201,17 @@ model University {
   name String
   logo String?
   banner String?
-  worldRank Int?
+  worldRank Int? @map("world_rank")
   location String?
-  studentCount Int?
+  studentCount Int? @map("student_count")
   tags String[]
   intake String?
   deadline DateTime?
   province String?
   courses Course[]
   scholarships Scholarship[]
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("universities")
 }
@@ -223,19 +223,19 @@ model Course {
   degree String
   language String
   major String
-  universityId String
+  universityId String @map("university_id")
   university University @relation(fields: [universityId], references: [id], onDelete: Cascade)
   intake String
   tuition Decimal @db.Decimal(10, 2)
   accommodation Decimal @db.Decimal(10, 2)
-  serviceCharge Decimal @db.Decimal(10, 2)
+  serviceCharge Decimal @db.Decimal(10, 2) @map("service_charge")
   rating Float?
   popularity Int? @default(0)
   tags String[]
   province String?
   city String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("courses")
 }
@@ -247,7 +247,7 @@ model Scholarship {
   type String
   degree String
   major String
-  universityId String
+  universityId String @map("university_id")
   university University @relation(fields: [universityId], references: [id], onDelete: Cascade)
   intake String
   language String
@@ -255,8 +255,8 @@ model Scholarship {
   city String
   tuition Decimal @db.Decimal(10, 2)
   accommodation Decimal @db.Decimal(10, 2)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("scholarships")
 }
@@ -266,14 +266,14 @@ model BlogPost {
   title String
   slug String @unique
   content String
-  featuredImage String?
+  featuredImage String? @map("featured_image")
   category String
   topic String
-  viewCount Int @default(0)
+  viewCount Int @default(0) @map("view_count")
   published Boolean @default(false)
-  publishedAt DateTime?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  publishedAt DateTime? @map("published_at")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("blog_posts")
 }
