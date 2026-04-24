@@ -36,6 +36,10 @@ export async function getUniversityDetail(id: string) {
   return prisma.university.findUnique({ where: { id } });
 }
 
+export async function getUniversityBySlug(slug: string) {
+  return prisma.university.findUnique({ where: { slug } });
+}
+
 // ==================== Course Query Functions ====================
 
 export async function listCourses(

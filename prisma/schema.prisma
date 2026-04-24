@@ -199,6 +199,7 @@ model Notification {
 model University {
   id String @id @default(uuid())
   name String
+  slug String @unique
   logo String?
   banner String?
   worldRank Int? @map("world_rank")
