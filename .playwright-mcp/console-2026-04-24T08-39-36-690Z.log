@@ -1,2 +1,22 @@
 [     438ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559
 [    3464ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=China%20Agricultural%20University:0
+[   11060ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Jiangnan%20University:0
+[   12058ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Nankai%20University:0
+[   12332ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Nanjing%20University%20of%20Science%20and%20Technology:0
+[   19871ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Tongji%20University:0
+[   20001ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Chongqing%20University:0
+[   20088ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Sichuan%20University:0
+[   20374ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=University%20of%20Shanghai%20for%20Science%20and%20Technology:0
+[   22770ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=East%20China%20Normal%20University:0
+[   22814ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Shanghai%20University:0
+[   27991ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Nanjing%20Southeast%20University:0
+[   31019ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[   31213ms] [LOG] [Fast Refresh] done in 194ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[   32054ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Chongqing%20University:0
+[   32869ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Beijing%20Normal%20University:0
+[   39580ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[   39717ms] [LOG] [Fast Refresh] done in 136ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[   44112ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=China%20Agricultural%20University:0
+[   47948ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Jiangnan%20University:0
+[   50206ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[   50387ms] [LOG] [Fast Refresh] done in 180ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43

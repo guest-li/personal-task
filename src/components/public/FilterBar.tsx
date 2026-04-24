@@ -26,8 +26,10 @@ export function FilterBar({ filters, onFilter }: FilterBarProps) {
     onFilter({});
   };
 
+  const activeFilterCount = Object.values(values).filter((v) => v).length;
+
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-4">
+    <div className="bg-white border border-brand-100 rounded-lg p-4 shadow-card">
       <div className="flex flex-wrap gap-4 items-end">
         {filters.map((filter) => (
           <div key={filter.name}>
@@ -38,14 +40,14 @@ export function FilterBar({ filters, onFilter }: FilterBarProps) {
                 placeholder={filter.placeholder}
                 value={values[filter.name] || ""}
                 onChange={(e) => handleChange(filter.name, e.target.value)}
-                className="border border-gray-300 rounded px-3 py-2"
+                className="border border-brand-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand transition-all duration-200"
               />
             )}
             {filter.type === "select" && (
               <select
                 value={values[filter.name] || ""}
                 onChange={(e) => handleChange(filter.name, e.target.value)}
-                className="border border-gray-300 rounded px-3 py-2"
+                className="border border-brand-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand transition-all duration-200 appearance-none bg-white cursor-pointer"
               >
                 <option value="">All</option>
                 {filter.options?.map((opt) => (
@@ -63,17 +65,24 @@ export function FilterBar({ filters, onFilter }: FilterBarProps) {
                 step="50"
                 value={values[filter.name] || 0}
                 onChange={(e) => handleChange(filter.name, e.target.value)}
-                className="w-32"
+                className="w-32 accent-brand-600"
               />
             )}
           </div>
         ))}
-        <button
-          onClick={handleClear}
-          className="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400"
-        >
-          Clear All
-        </button>
+        {activeFilterCount > 0 && (
+          <div className="flex items-center gap-2">
+            <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-brand-100 text-brand-700 text-xs font-bold">
+              {activeFilterCount}
+            </span>
+            <button
+              onClick={handleClear}
+              className="text-brand-600 hover:text-brand-800 font-medium text-sm transition-colors"
+            >
+              Clear All
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
