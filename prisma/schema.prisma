@@ -197,84 +197,84 @@ model Notification {
 }
 
 model University {
-  id           String        @id @default(uuid())
-  name         String
-  slug         String        @unique
-  logo         String?
-  banner       String?
-  worldRank    Int?          @map("world_rank")
-  location     String?
-  studentCount Int?          @map("student_count")
-  tags         String[]
-  intake       String?
-  deadline     DateTime?
-  province     String?
-  courses      Course[]
+  id String @id @default(uuid())
+  name String
+  slug String @unique
+  logo String?
+  banner String?
+  worldRank Int? @map("world_rank")
+  location String?
+  studentCount Int? @map("student_count")
+  tags String[]
+  intake String?
+  deadline DateTime?
+  province String?
+  courses Course[]
   scholarships Scholarship[]
-  createdAt    DateTime      @default(now()) @map("created_at")
-  updatedAt    DateTime      @updatedAt @map("updated_at")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("universities")
 }
 
 model Course {
-  id              String   @id @default(uuid())
-  name            String
-  slug            String   @unique
-  degree          String
-  language        String
-  major           String
-  universityId    String   @map("university_id")
-  university      University @relation(fields: [universityId], references: [id], onDelete: Cascade)
-  intake          String   @default("")
-  tuition         Decimal  @db.Decimal(10, 2)
-  accommodation   Decimal  @db.Decimal(10, 2)
-  serviceCharge   Decimal  @map("service_charge") @db.Decimal(10, 2)
-  rating          Float?
-  popularity      Int?     @default(0)
-  tags            String[]
-  province        String?
-  city            String?
-  createdAt       DateTime @default(now()) @map("created_at")
-  updatedAt       DateTime @updatedAt @map("updated_at")
+  id String @id @default(uuid())
+  name String
+  slug String @unique
+  degree String
+  language String
+  major String
+  universityId String @map("university_id")
+  university University @relation(fields: [universityId], references: [id], onDelete: Cascade)
+  intake String
+  tuition Decimal @db.Decimal(10, 2)
+  accommodation Decimal @db.Decimal(10, 2)
+  serviceCharge Decimal @db.Decimal(10, 2) @map("service_charge")
+  rating Float?
+  popularity Int? @default(0)
+  tags String[]
+  province String?
+  city String?
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("courses")
 }
 
 model Scholarship {
-  id              String   @id @default(uuid())
-  name            String
-  slug            String   @unique
-  type            String
-  degree          String
-  major           String
-  universityId    String   @map("university_id")
-  university      University @relation(fields: [universityId], references: [id], onDelete: Cascade)
-  intake          String?
-  language        String
-  province        String
-  city            String
-  tuition         Decimal  @db.Decimal(10, 2)
-  accommodation   Decimal  @db.Decimal(10, 2)
-  createdAt       DateTime @default(now()) @map("created_at")
-  updatedAt       DateTime @updatedAt @map("updated_at")
+  id String @id @default(uuid())
+  name String
+  slug String @unique
+  type String
+  degree String
+  major String
+  universityId String @map("university_id")
+  university University @relation(fields: [universityId], references: [id], onDelete: Cascade)
+  intake String
+  language String
+  province String
+  city String
+  tuition Decimal @db.Decimal(10, 2)
+  accommodation Decimal @db.Decimal(10, 2)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("scholarships")
 }
 
 model BlogPost {
-  id            String   @id @default(uuid())
-  title         String
-  slug          String   @unique
-  content       String
-  featuredImage String?  @map("featured_image")
-  category      String
-  topic         String
-  viewCount     Int      @default(0) @map("view_count")
-  published     Boolean  @default(false)
-  publishedAt   DateTime? @map("published_at")
-  createdAt     DateTime @default(now()) @map("created_at")
-  updatedAt     DateTime @updatedAt @map("updated_at")
+  id String @id @default(uuid())
+  title String
+  slug String @unique
+  content String
+  featuredImage String? @map("featured_image")
+  category String
+  topic String
+  viewCount Int @default(0) @map("view_count")
+  published Boolean @default(false)
+  publishedAt DateTime? @map("published_at")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("blog_posts")
 }
