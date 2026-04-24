@@ -12,6 +12,10 @@ export async function cleanDatabase() {
   await prisma.studentProfile.deleteMany();
   await prisma.partnerProfile.deleteMany();
   await prisma.user.deleteMany();
+  await prisma.blogPost.deleteMany();
+  await prisma.scholarship.deleteMany();
+  await prisma.course.deleteMany();
+  await prisma.university.deleteMany();
 }
 
 export { prisma as testPrisma };
