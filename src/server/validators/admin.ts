@@ -133,10 +133,10 @@ export const createCourseSchema = z.object({
   major: z.string().min(1),
   universityId: z.string().min(1),
   intake: z.string().min(1),
-  tuition: z.coerce.number().min(0),
-  accommodation: z.coerce.number().min(0),
-  serviceCharge: z.coerce.number().min(0),
-  rating: z.coerce.number().optional(),
+  tuition: z.coerce.number().int().min(0),
+  accommodation: z.coerce.number().int().min(0),
+  serviceCharge: z.coerce.number().int().min(0),
+  rating: z.coerce.number().int().optional(),
   tags: z.array(z.string()).default([]),
   province: z.string().optional(),
   city: z.string().optional(),
@@ -164,8 +164,8 @@ export const createScholarshipSchema = z.object({
   language: z.string().min(1),
   province: z.string().min(1),
   city: z.string().min(1),
-  tuition: z.coerce.number().min(0),
-  accommodation: z.coerce.number().min(0),
+  tuition: z.coerce.number().int().min(0),
+  accommodation: z.coerce.number().int().min(0),
 });
 export const updateScholarshipSchema = createScholarshipSchema.partial();
 export const listScholarshipsAdminSchema = z.object({
