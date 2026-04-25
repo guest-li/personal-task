@@ -400,3 +400,275 @@ export async function sendNotificationAdmin(
     throw error;
   }
 }
+
+// ── Universities ──────────────────────────────────────────────────────────
+
+interface UniversityFilters {
+  search?: string;
+  province?: string;
+}
+
+export async function listUniversitiesAdmin(
+  page: number,
+  limit: number,
+  filters: UniversityFilters,
+) {
+  const skip = (page - 1) * limit;
+  const where: Prisma.UniversityWhereInput = {};
+  if (filters.search) where.name = { contains: filters.search, mode: "insensitive" };
+  if (filters.province) where.province = filters.province;
+
+  const [items, total] = await Promise.all([
+    prisma.university.findMany({
+      where,
+      skip,
+      take: limit,
+      orderBy: { createdAt: "desc" },
+    }),
+    prisma.university.count({ where }),
+  ]);
+
+  return {
+    universities: items,
+    pagination: { page, limit, total, totalPages: Math.ceil(total / limit) },
+  };
+}
+
+export async function getUniversityDetailAdmin(id: string) {
+  return prisma.university.findUnique({ where: { id } });
+}
+
+export async function createUniversityAdmin(data: Prisma.UniversityCreateInput) {
+  try {
+    return await prisma.university.create({ data });
+  } catch (e: any) {
+    if (e.code === "P2002") throw new Error("Slug already exists");
+    throw e;
+  }
+}
+
+export async function updateUniversityAdmin(
+  id: string,
+  data: Prisma.UniversityUpdateInput,
+) {
+  try {
+    return await prisma.university.update({ where: { id }, data });
+  } catch (e: any) {
+    if (e.code === "P2002") throw new Error("Slug already exists");
+    throw e;
+  }
+}
+
+export async function deleteUniversityAdmin(id: string) {
+  return prisma.university.delete({ where: { id } });
+}
+
+// ── Courses ───────────────────────────────────────────────────────────────
+
+interface CourseFilters {
+  search?: string;
+  degree?: string;
+  universityId?: string;
+}
+
+export async function listCoursesAdmin(
+  page: number,
+  limit: number,
+  filters: CourseFilters,
+) {
+  const skip = (page - 1) * limit;
+  const where: Prisma.CourseWhereInput = {};
+  if (filters.search) where.name = { contains: filters.search, mode: "insensitive" };
+  if (filters.degree) where.degree = filters.degree;
+  if (filters.universityId) where.universityId = filters.universityId;
+
+  const [items, total] = await Promise.all([
+    prisma.course.findMany({
+      where,
+      include: { university: { select: { id: true, name: true } } },
+      skip,
+      take: limit,
+      orderBy: { createdAt: "desc" },
+    }),
+    prisma.course.count({ where }),
+  ]);
+
+  return {
+    courses: items,
+    pagination: { page, limit, total, totalPages: Math.ceil(total / limit) },
+  };
+}
+
+export async function getCourseDetailAdmin(id: string) {
+  return prisma.course.findUnique({
+    where: { id },
+    include: { university: { select: { id: true, name: true } } },
+  });
+}
+
+export async function createCourseAdmin(data: Prisma.CourseCreateInput) {
+  try {
+    return await prisma.course.create({
+      data,
+      include: { university: { select: { id: true, name: true } } },
+    });
+  } catch (e: any) {
+    if (e.code === "P2002") throw new Error("Slug already exists");
+    throw e;
+  }
+}
+
+export async function updateCourseAdmin(id: string, data: Prisma.CourseUpdateInput) {
+  try {
+    return await prisma.course.update({
+      where: { id },
+      data,
+      include: { university: { select: { id: true, name: true } } },
+    });
+  } catch (e: any) {
+    if (e.code === "P2002") throw new Error("Slug already exists");
+    throw e;
+  }
+}
+
+export async function deleteCourseAdmin(id: string) {
+  return prisma.course.delete({ where: { id } });
+}
+
+// ── Scholarships ──────────────────────────────────────────────────────────
+
+interface ScholarshipFilters {
+  search?: string;
+  type?: string;
+  degree?: string;
+}
+
+export async function listScholarshipsAdmin(
+  page: number,
+  limit: number,
+  filters: ScholarshipFilters,
+) {
+  const skip = (page - 1) * limit;
+  const where: Prisma.ScholarshipWhereInput = {};
+  if (filters.search) where.name = { contains: filters.search, mode: "insensitive" };
+  if (filters.type) where.type = filters.type;
+  if (filters.degree) where.degree = filters.degree;
+
+  const [items, total] = await Promise.all([
+    prisma.scholarship.findMany({
+      where,
+      include: { university: { select: { id: true, name: true } } },
+      skip,
+      take: limit,
+      orderBy: { createdAt: "desc" },
+    }),
+    prisma.scholarship.count({ where }),
+  ]);
+
+  return {
+    scholarships: items,
+    pagination: { page, limit, total, totalPages: Math.ceil(total / limit) },
+  };
+}
+
+export async function getScholarshipDetailAdmin(id: string) {
+  return prisma.scholarship.findUnique({
+    where: { id },
+    include: { university: { select: { id: true, name: true } } },
+  });
+}
+
+export async function createScholarshipAdmin(data: Prisma.ScholarshipCreateInput) {
+  try {
+    return await prisma.scholarship.create({
+      data,
+      include: { university: { select: { id: true, name: true } } },
+    });
+  } catch (e: any) {
+    if (e.code === "P2002") throw new Error("Slug already exists");
+    throw e;
+  }
+}
+
+export async function updateScholarshipAdmin(
+  id: string,
+  data: Prisma.ScholarshipUpdateInput,
+) {
+  try {
+    return await prisma.scholarship.update({
+      where: { id },
+      data,
+      include: { university: { select: { id: true, name: true } } },
+    });
+  } catch (e: any) {
+    if (e.code === "P2002") throw new Error("Slug already exists");
+    throw e;
+  }
+}
+
+export async function deleteScholarshipAdmin(id: string) {
+  return prisma.scholarship.delete({ where: { id } });
+}
+
+// ── Blog Posts ────────────────────────────────────────────────────────────
+
+interface BlogPostFilters {
+  search?: string;
+  published?: string;
+  category?: string;
+}
+
+export async function listBlogPostsAdmin(
+  page: number,
+  limit: number,
+  filters: BlogPostFilters,
+) {
+  const skip = (page - 1) * limit;
+  const where: Prisma.BlogPostWhereInput = {};
+  if (filters.search) where.title = { contains: filters.search, mode: "insensitive" };
+  if (filters.published !== undefined) {
+    where.published = filters.published === "true" ? true : false;
+  }
+  if (filters.category) where.category = filters.category;
+
+  const [items, total] = await Promise.all([
+    prisma.blogPost.findMany({
+      where,
+      skip,
+      take: limit,
+      orderBy: { createdAt: "desc" },
+    }),
+    prisma.blogPost.count({ where }),
+  ]);
+
+  return {
+    blogPosts: items,
+    pagination: { page, limit, total, totalPages: Math.ceil(total / limit) },
+  };
+}
+
+export async function getBlogPostDetailAdmin(id: string) {
+  return prisma.blogPost.findUnique({ where: { id } });
+}
+
+export async function createBlogPostAdmin(data: Prisma.BlogPostCreateInput) {
+  try {
+    return await prisma.blogPost.create({ data });
+  } catch (e: any) {
+    if (e.code === "P2002") throw new Error("Slug already exists");
+    throw e;
+  }
+}
+
+export async function updateBlogPostAdmin(id: string, data: Prisma.BlogPostUpdateInput) {
+  try {
+    return await prisma.blogPost.update({ where: { id }, data });
+  } catch (e: any) {
+    if (e.code === "P2002") throw new Error("Slug already exists");
+    throw e;
+  }
+}
+
+export async function deleteBlogPostAdmin(id: string) {
+  return prisma.blogPost.delete({ where: { id } });
+}
