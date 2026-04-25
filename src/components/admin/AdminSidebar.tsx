@@ -10,6 +10,10 @@ const navItems = [
   { href: "/admin/events", label: "Events", icon: "📅" },
   { href: "/admin/partners", label: "Partners", icon: "🤝" },
   { href: "/admin/notifications", label: "Notifications", icon: "🔔" },
+  { href: "/admin/universities", label: "Universities", icon: "🏛️" },
+  { href: "/admin/courses", label: "Courses", icon: "📚" },
+  { href: "/admin/scholarships", label: "Scholarships", icon: "🎓" },
+  { href: "/admin/blog-posts", label: "Blog Posts", icon: "📝" },
 ];
 
 export function AdminSidebar() {
