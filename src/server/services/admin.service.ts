@@ -653,7 +653,12 @@ export async function getBlogPostDetailAdmin(id: string) {
 
 export async function createBlogPostAdmin(data: Prisma.BlogPostCreateInput) {
   try {
-    return await prisma.blogPost.create({ data });
+    // If published is true and publishedAt is not provided, set it to now
+    const finalData = {
+      ...data,
+      ...(data.published === true && !data.publishedAt && { publishedAt: new Date() }),
+    };
+    return await prisma.blogPost.create({ data: finalData });
   } catch (e: any) {
     if (e.code === "P2002") throw new Error("Slug already exists");
     throw e;
@@ -662,7 +667,12 @@ export async function createBlogPostAdmin(data: Prisma.BlogPostCreateInput) {
 
 export async function updateBlogPostAdmin(id: string, data: Prisma.BlogPostUpdateInput) {
   try {
-    return await prisma.blogPost.update({ where: { id }, data });
+    // If published is being set to true and publishedAt is not provided, set it to now
+    const finalData = {
+      ...data,
+      ...(data.published === true && data.publishedAt === undefined && { publishedAt: new Date() }),
+    };
+    return await prisma.blogPost.update({ where: { id }, data: finalData });
   } catch (e: any) {
     if (e.code === "P2002") throw new Error("Slug already exists");
     throw e;
