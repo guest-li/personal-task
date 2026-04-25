@@ -614,7 +614,7 @@ export async function deleteScholarshipAdmin(id: string) {
 
 interface BlogPostFilters {
   search?: string;
-  published?: string;
+  published?: boolean;
   category?: string;
 }
 
@@ -627,7 +627,7 @@ export async function listBlogPostsAdmin(
   const where: Prisma.BlogPostWhereInput = {};
   if (filters.search) where.title = { contains: filters.search, mode: "insensitive" };
   if (filters.published !== undefined) {
-    where.published = filters.published === "true" ? true : false;
+    where.published = filters.published;
   }
   if (filters.category) where.category = filters.category;
 
