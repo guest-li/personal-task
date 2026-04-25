@@ -72,8 +72,13 @@ export async function getUniversityDetail(id: string) {
   return prisma.university.findUnique({ where: { id } });
 }
 
-export async function getUniversityBySlug(slug: string) {
-  return prisma.university.findUnique({ where: { slug } });
+export async function getUniversityBySlug(slugOrId: string) {
+  // Try slug first, then fall back to id (UUID)
+  let university = await prisma.university.findUnique({ where: { slug: slugOrId } }).catch(() => null);
+  if (!university) {
+    university = await prisma.university.findUnique({ where: { id: slugOrId } }).catch(() => null);
+  }
+  return university;
 }
 
 // ==================== Course Query Functions ====================
@@ -123,11 +128,19 @@ export async function getCourseDetail(id: string) {
   });
 }
 
-export async function getCourseBySlug(slug: string) {
-  return prisma.course.findUnique({
-    where: { slug },
+export async function getCourseBySlug(slugOrId: string) {
+  // Try slug first, then fall back to id (UUID)
+  let course = await prisma.course.findUnique({
+    where: { slug: slugOrId },
     include: { university: true },
-  });
+  }).catch(() => null);
+  if (!course) {
+    course = await prisma.course.findUnique({
+      where: { id: slugOrId },
+      include: { university: true },
+    }).catch(() => null);
+  }
+  return course;
 }
 
 // ==================== Scholarship Query Functions ====================
@@ -163,6 +176,28 @@ export async function listScholarships(
     scholarships,
     pagination: { page, limit, total, totalPages: Math.ceil(total / limit) },
   };
+}
+
+export async function getScholarshipDetail(id: string) {
+  return prisma.scholarship.findUnique({
+    where: { id },
+    include: { university: true },
+  });
+}
+
+export async function getScholarshipBySlug(slugOrId: string) {
+  // Try slug first, then fall back to id (UUID)
+  let scholarship = await prisma.scholarship.findUnique({
+    where: { slug: slugOrId },
+    include: { university: true },
+  }).catch(() => null);
+  if (!scholarship) {
+    scholarship = await prisma.scholarship.findUnique({
+      where: { id: slugOrId },
+      include: { university: true },
+    }).catch(() => null);
+  }
+  return scholarship;
 }
 
 // ==================== Blog Post Query Functions ====================
