@@ -100,6 +100,106 @@ export const sendNotificationSchema = z.object({
   message: "Cannot specify both targetRole and targetUserIds",
 });
 
+// ── University ────────────────────────────────────────────────────────────
+export const createUniversitySchema = z.object({
+  name: z.string().min(1),
+  slug: z.string().min(1),
+  logo: z.string().optional(),
+  banner: z.string().optional(),
+  worldRank: z.coerce.number().int().optional(),
+  location: z.string().optional(),
+  studentCount: z.coerce.number().int().optional(),
+  tags: z.array(z.string()).default([]),
+  intake: z.string().optional(),
+  deadline: z.string().datetime().optional(),
+  province: z.string().optional(),
+});
+export const updateUniversitySchema = createUniversitySchema.partial();
+export const listUniversitiesSchema = z.object({
+  page: z.coerce.number().int().min(1).default(1),
+  limit: z.coerce.number().int().min(1).max(100).default(20),
+  search: z.string().optional(),
+  province: z.string().optional(),
+});
+export type CreateUniversityInput = z.infer<typeof createUniversitySchema>;
+export type UpdateUniversityInput = z.infer<typeof updateUniversitySchema>;
+
+// ── Course ────────────────────────────────────────────────────────────────
+export const createCourseSchema = z.object({
+  name: z.string().min(1),
+  slug: z.string().min(1),
+  degree: z.string().min(1),
+  language: z.string().min(1),
+  major: z.string().min(1),
+  universityId: z.string().min(1),
+  intake: z.string().min(1),
+  tuition: z.coerce.number().min(0),
+  accommodation: z.coerce.number().min(0),
+  serviceCharge: z.coerce.number().min(0),
+  rating: z.coerce.number().optional(),
+  tags: z.array(z.string()).default([]),
+  province: z.string().optional(),
+  city: z.string().optional(),
+});
+export const updateCourseSchema = createCourseSchema.partial();
+export const listCoursesAdminSchema = z.object({
+  page: z.coerce.number().int().min(1).default(1),
+  limit: z.coerce.number().int().min(1).max(100).default(20),
+  search: z.string().optional(),
+  degree: z.string().optional(),
+  universityId: z.string().optional(),
+});
+export type CreateCourseInput = z.infer<typeof createCourseSchema>;
+export type UpdateCourseInput = z.infer<typeof updateCourseSchema>;
+
+// ── Scholarship ───────────────────────────────────────────────────────────
+export const createScholarshipSchema = z.object({
+  name: z.string().min(1),
+  slug: z.string().min(1),
+  type: z.string().min(1),
+  degree: z.string().min(1),
+  major: z.string().min(1),
+  universityId: z.string().min(1),
+  intake: z.string().min(1),
+  language: z.string().min(1),
+  province: z.string().min(1),
+  city: z.string().min(1),
+  tuition: z.coerce.number().min(0),
+  accommodation: z.coerce.number().min(0),
+});
+export const updateScholarshipSchema = createScholarshipSchema.partial();
+export const listScholarshipsAdminSchema = z.object({
+  page: z.coerce.number().int().min(1).default(1),
+  limit: z.coerce.number().int().min(1).max(100).default(20),
+  search: z.string().optional(),
+  type: z.string().optional(),
+  degree: z.string().optional(),
+});
+export type CreateScholarshipInput = z.infer<typeof createScholarshipSchema>;
+export type UpdateScholarshipInput = z.infer<typeof updateScholarshipSchema>;
+
+// ── BlogPost ──────────────────────────────────────────────────────────────
+export const createBlogPostSchema = z.object({
+  title: z.string().min(1),
+  slug: z.string().min(1),
+  content: z.string().min(1),
+  featuredImage: z.string().optional(),
+  category: z.string().min(1),
+  topic: z.string().min(1),
+  published: z.coerce.boolean().default(false),
+  publishedAt: z.string().datetime().optional(),
+});
+export const updateBlogPostSchema = createBlogPostSchema.partial();
+export const listBlogPostsAdminSchema = z.object({
+  page: z.coerce.number().int().min(1).default(1),
+  limit: z.coerce.number().int().min(1).max(100).default(20),
+  search: z.string().optional(),
+  published: z.enum(["true", "false"]).optional(),
+  category: z.string().optional(),
+});
+export type CreateBlogPostInput = z.infer<typeof createBlogPostSchema>;
+export type UpdateBlogPostInput = z.infer<typeof updateBlogPostSchema>;
+
 // Type exports
 export type CreateUserInput = z.infer<typeof createUserSchema>;
 export type UpdateUserInput = z.infer<typeof updateUserSchema>;
