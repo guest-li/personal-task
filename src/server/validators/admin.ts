@@ -186,6 +186,7 @@ export const createBlogPostSchema = z.object({
   featuredImage: z.string().optional(),
   category: z.string().min(1),
   topic: z.string().min(1),
+  viewCount: z.coerce.number().int().min(0).default(0),
   published: z.coerce.boolean().default(false),
   publishedAt: z.string().datetime().optional(),
 });
