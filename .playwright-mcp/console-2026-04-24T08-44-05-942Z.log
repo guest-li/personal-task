@@ -8,3 +8,8 @@
 [    9736ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Tongji%20University:0
 [   10100ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Chongqing%20University:0
 [   12786ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=Sichuan%20University:0
+[   18362ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=University%20of%20Shanghai%20for%20Science%20and%20Technology:0
+[   30312ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://via.placeholder.com/1200x300?text=East%20China%20Normal%20University:0
+[   31248ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Shanghai%20University:0
+[   34762ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Nanjing%20Southeast%20University:0
+[   39738ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://via.placeholder.com/1200x300?text=Beijing%20Normal%20University:0

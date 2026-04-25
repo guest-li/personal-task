@@ -44,112 +44,109 @@ export default function ContactPage() {
 
   return (
     <PublicLayout>
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-2">Contact Us</h1>
-        <p className="text-lg text-gray-600 mb-12">
-          Get in touch with our team. We're here to help with any questions.
-        </p>
+      {/* Hero Banner */}
+      <div className="bg-gradient-to-r from-brand-700 to-brand-800 text-white py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+          <p className="text-xl text-brand-100 max-w-2xl">
+            Have questions? We're here to help. Reach out to our team and we'll respond within 24 hours.
+          </p>
+        </div>
+      </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {/* Contact Information */}
           <div>
-            <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
+            <h2 className="text-2xl font-bold text-brand-800 mb-8">Contact Info</h2>
 
             <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="text-3xl">📍</div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Address</h3>
-                  <p className="text-gray-600">123 Education Street, Beijing, China 100000</p>
-                </div>
+              <div className="bg-brand-50 rounded-lg p-6 border border-brand-100">
+                <p className="text-3xl mb-3">📍</p>
+                <h3 className="font-bold text-gray-900 mb-2">Address</h3>
+                <p className="text-gray-600">123 Education Street, Beijing, China 100000</p>
               </div>
 
-              <div className="flex gap-4">
-                <div className="text-3xl">📞</div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                  <p className="text-gray-600">+86 10 1234 5678</p>
-                </div>
+              <div className="bg-brand-50 rounded-lg p-6 border border-brand-100">
+                <p className="text-3xl mb-3">📞</p>
+                <h3 className="font-bold text-gray-900 mb-2">Phone</h3>
+                <p className="text-gray-600">+86 10 1234 5678</p>
               </div>
 
-              <div className="flex gap-4">
-                <div className="text-3xl">📧</div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                  <p className="text-gray-600">info@educationchina.com</p>
-                </div>
+              <div className="bg-brand-50 rounded-lg p-6 border border-brand-100">
+                <p className="text-3xl mb-3">📧</p>
+                <h3 className="font-bold text-gray-900 mb-2">Email</h3>
+                <p className="text-gray-600">info@malishaedu.com</p>
               </div>
 
-              <div className="flex gap-4">
-                <div className="text-3xl">🕐</div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Hours</h3>
-                  <p className="text-gray-600">
-                    Mon - Fri: 9:00 AM - 6:00 PM
-                    <br />
-                    Sat - Sun: 10:00 AM - 4:00 PM
-                  </p>
-                </div>
+              <div className="bg-brand-50 rounded-lg p-6 border border-brand-100">
+                <p className="text-3xl mb-3">🕐</p>
+                <h3 className="font-bold text-gray-900 mb-2">Business Hours</h3>
+                <p className="text-gray-600 text-sm">
+                  Mon - Fri: 9:00 AM - 6:00 PM<br />
+                  Sat - Sun: 10:00 AM - 4:00 PM<br />
+                  <span className="text-xs text-gray-500 mt-2">UTC+8</span>
+                </p>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-lg p-8">
+            <form onSubmit={handleSubmit} className="bg-white border border-brand-100 rounded-lg shadow-card p-8">
               {submitted && (
-                <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
-                  Thank you! We'll get back to you soon.
+                <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-700 rounded-lg">
+                  ✓ Thank you! We'll get back to you within 24 hours.
                 </div>
               )}
 
               <div className="mb-6">
-                <label className="block text-gray-700 font-semibold mb-2">Full Name</label>
+                <label className="block text-gray-900 font-semibold mb-2">Full Name *</label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-brand-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand transition-all duration-200"
                   placeholder="Your name"
                 />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Email</label>
+                  <label className="block text-gray-900 font-semibold mb-2">Email *</label>
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border border-brand-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand transition-all duration-200"
                     placeholder="your@email.com"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Phone</label>
+                  <label className="block text-gray-900 font-semibold mb-2">Phone</label>
                   <input
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border border-brand-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand transition-all duration-200"
                     placeholder="+86 1234567890"
                   />
                 </div>
               </div>
 
               <div className="mb-6">
-                <label className="block text-gray-700 font-semibold mb-2">Subject</label>
+                <label className="block text-gray-900 font-semibold mb-2">Subject *</label>
                 <select
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-brand-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand transition-all duration-200"
                 >
                   <option value="">Select a subject</option>
                   <option value="general">General Inquiry</option>
@@ -161,14 +158,14 @@ export default function ContactPage() {
               </div>
 
               <div className="mb-6">
-                <label className="block text-gray-700 font-semibold mb-2">Message</label>
+                <label className="block text-gray-900 font-semibold mb-2">Message *</label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-brand-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand transition-all duration-200"
                   placeholder="Your message..."
                 />
               </div>
@@ -176,7 +173,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-blue-600 text-white px-6 py-3 rounded font-semibold hover:bg-blue-700 disabled:opacity-50 transition"
+                className="w-full bg-gradient-to-r from-brand-700 to-brand-800 hover:from-brand-800 hover:to-brand-900 text-white font-bold px-6 py-3 rounded-lg transition-all duration-200 disabled:opacity-50"
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>
@@ -184,19 +181,20 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Offices */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">Our Offices</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Offices Section */}
+        <section>
+          <h2 className="text-3xl font-bold text-brand-800 mb-8">Our Offices</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { city: "Beijing", address: "123 Education Street, Beijing" },
-              { city: "Shanghai", address: "456 Academic Ave, Shanghai" },
-              { city: "Xi'an", address: "789 Learning Lane, Xi'an" },
+              { city: "Beijing", address: "123 Education Street, Chaoyang District", flag: "🇨🇳" },
+              { city: "Shanghai", address: "456 Academic Ave, Pudong District", flag: "🇨🇳" },
+              { city: "Xi'an", address: "789 Learning Lane, Yan'ta District", flag: "🇨🇳" },
             ].map((office, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{office.city}</h3>
-                <p className="text-gray-600 mb-4">{office.address}</p>
-                <a href="#" className="text-blue-600 hover:underline font-semibold">
+              <div key={index} className="bg-brand-50 border border-brand-100 rounded-lg shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-200 p-6">
+                <p className="text-4xl mb-3">{office.flag}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{office.city}</h3>
+                <p className="text-gray-600 mb-4 text-sm">{office.address}</p>
+                <a href="#" className="text-brand-600 hover:text-brand-800 font-semibold text-sm transition-colors">
                   Get Directions →
                 </a>
               </div>
