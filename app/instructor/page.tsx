@@ -196,7 +196,7 @@ export default function InstructorPage() {
           <aside className="bg-white border border-gray-200 rounded-lg p-6 h-fit">
             <h3 className="text-xl font-bold mb-4">Ready to Apply?</h3>
             <p className="text-gray-700 text-sm mb-6">
-              Join our team of passionate educators and make a difference in students' lives.
+              Join our team of passionate educators and make a difference in students&apos; lives.
             </p>
             <button className="w-full bg-blue-600 text-white px-4 py-3 rounded font-semibold hover:bg-blue-700 mb-3">
               Apply Now

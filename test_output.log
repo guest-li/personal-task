@@ -1,0 +1,692 @@
+
+> edu-consultancy@0.1.0 test
+> vitest run
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+ RUN  v2.1.3 /Users/lizhao/Documents/code/job
+
+ ❯ tests/integration/admin/content-management.test.ts  (34 tests | 9 failed) 14808ms
+   × Admin Content Management API > Scholarships > GET /api/v1/admin/scholarships > should filter scholarships by search
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Content Management API > Scholarships > GET /api/v1/admin/scholarships > should filter scholarships by degree
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Content Management API > Scholarships > GET /api/v1/admin/scholarships/[id] > should return 404 for non-existent scholarship
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Content Management API > Scholarships > PUT /api/v1/admin/scholarships/[id] > should reject duplicate slug on update
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Content Management API > Scholarships > DELETE /api/v1/admin/scholarships/[id] > should return 404 when deleting non-existent scholarship
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Content Management API > Scholarships > DELETE /api/v1/admin/scholarships/[id] > should return 404 when getting deleted scholarship
+     → 
+Invalid `testPrisma.scholarship.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/integration/admin/content-management.test.ts:529:58
+
+  526 });
+  527 
+  528 it("should return 404 when getting deleted scholarship", async () => {
+→ 529   const scholarship = await testPrisma.scholarship.create(
+Foreign key constraint violated: `scholarships_university_id_fkey (index)`
+   × Admin Content Management API > Blog Posts > POST /api/v1/admin/blog-posts > should return 401 for unauthenticated requests
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Content Management API > Blog Posts > GET /api/v1/admin/blog-posts > should filter blog posts by published=true
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Content Management API > Blog Posts > GET /api/v1/admin/blog-posts > should filter blog posts by category
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ✓ tests/integration/public/scholarships.test.ts  (14 tests) 151ms
+ ❯ tests/integration/public/courses.test.ts  (15 tests | 1 failed) 162ms
+   × Public Courses API > GET /api/v1/public/courses > should list courses with default pagination
+     → 
+Invalid `testPrisma.course.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/integration/public/courses.test.ts:45:33
+
+  42 
+  43 it("should list courses with default pagination", async () => {
+  44   for (let i = 0; i < 25; i++) {
+→ 45     await testPrisma.course.create(
+Foreign key constraint violated: `courses_university_id_fkey (index)`
+ ✓ tests/integration/public/blog.test.ts  (16 tests) 127ms
+ ❯ tests/integration/admin/universities-courses.test.ts  (14 tests | 3 failed) 3573ms
+   × Admin Universities & Courses API > POST /api/v1/admin/universities > should reject duplicate slug
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Universities & Courses API > GET /api/v1/admin/universities > should filter universities by province
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Universities & Courses API > GET /api/v1/admin/universities/[id] > should return 404 for non-existent university
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ✓ tests/integration/public/forms.test.ts  (33 tests) 132ms
+ ✓ tests/integration/public/universities.test.ts  (15 tests) 109ms
+ ❯ tests/integration/admin/users.test.ts  (15 tests | 3 failed) 4423ms
+   × Admin Users API > POST /api/v1/admin/users > should handle duplicate email gracefully
+     → expected [ 409, 500 ] to include 201
+   × Admin Users API > GET /api/v1/admin/users/:id > should return 404 for non-existent user
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Users API > PUT /api/v1/admin/users/:id > should handle non-existent user update gracefully
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ❯ tests/integration/admin/events.test.ts  (15 tests | 7 failed) 3758ms
+   × Admin Events API > POST /api/v1/admin/events > should reject invalid input
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Events API > GET /api/v1/admin/events > should list events
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Events API > GET /api/v1/admin/events > should filter by status
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Events API > PUT /api/v1/admin/events/:id > should update event
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Events API > PUT /api/v1/admin/events/:id > should allow updating event with valid partial data
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Events API > DELETE /api/v1/admin/events/:id > should handle non-existent event deletion gracefully
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Events API > auth validation > should return 403 for non-admin user
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ❯ tests/integration/admin/partners.test.ts  (11 tests | 4 failed) 3200ms
+   × Admin Partners API > GET /api/v1/admin/partners/applications > should list with pagination
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Partners API > PATCH /api/v1/admin/partners/applications/:userId > should approve partner application
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Partners API > PATCH /api/v1/admin/partners/applications/:userId > should handle non-existent partner gracefully
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+   × Admin Partners API > partner profile > should include partner profile data in list
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ❯ tests/integration/admin/applications.test.ts  (11 tests | 1 failed) 5385ms
+   × Admin Applications API > PATCH /api/v1/admin/applications/:id > should approve application
+     → 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ✓ tests/integration/applications/applications.test.ts  (7 tests) 75ms
+ ❯ tests/integration/users/profile.test.ts  (5 tests | 1 failed) 1947ms
+   × Profile APIs > PUT /api/v1/users/password > changes password with correct current password
+     → expected 400 to be 200 // Object.is equality
+ ✓ tests/unit/services/application.service.test.ts  (7 tests) 95ms
+ ✓ tests/integration/auth/login.test.ts  (7 tests) 1987ms
+ ✓ tests/integration/notifications/notifications.test.ts  (4 tests) 52ms
+ ❯ tests/integration/auth/forgot-password.test.ts  (4 tests | 1 failed) 730ms
+   × Forgot/Reset Password flow > resets password with valid token
+     → 
+Invalid `prisma.user.update()` invocation in
+/Users/lizhao/Documents/code/job/app/api/v1/auth/reset-password/route.ts:42:21
+
+  39 }
+  40 
+  41 const newHash = await hashPassword(parsed.data.password);
+→ 42 await prisma.user.update(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+ ✓ tests/integration/auth/register.test.ts  (5 tests) 765ms
+ ✓ tests/integration/auth/logout-refresh.test.ts  (3 tests) 41ms
+ ✓ tests/integration/users/dashboard-stats.test.ts  (4 tests) 47ms
+ ✓ tests/integration/auth/partner-register.test.ts  (4 tests) 748ms
+ ❯ tests/unit/services/university.service.test.ts  (6 tests | 1 failed) 1ms
+   × University Service > updateUniversityInfo > should validate required fields before update
+     → expected '' to be truthy
+ ✓ tests/integration/events/my-registrations.test.ts  (3 tests) 44ms
+ ✓ tests/unit/services/notification.service.test.ts  (5 tests) 65ms
+ ❯ tests/unit/services/profile.service.test.ts  (4 tests | 1 failed) 1682ms
+   × profile.service > changes password successfully
+     → 
+Invalid `prisma.user.update()` invocation in
+/Users/lizhao/Documents/code/job/src/server/services/profile.service.ts:82:22
+
+  79 }
+  80 
+  81 const newHash = await hashPassword(newPassword);
+→ 82 return prisma.user.update(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+ ✓ tests/unit/middleware/with-validation.test.ts  (3 tests) 1ms
+ ❯ tests/unit/services/user.service.test.ts  (5 tests | 1 failed) 1239ms
+   × user.service > rejects duplicate email
+     → promise resolved "{ …(14) }" instead of rejecting
+ ✓ tests/unit/middleware/with-auth.test.ts  (3 tests) 1ms
+ ✓ tests/unit/services/upload.service.test.ts  (3 tests) 2ms
+ ✓ tests/unit/middleware/with-role.test.ts  (3 tests) 1ms
+ ✓ tests/integration/users/me.test.ts  (2 tests) 23ms
+ ✓ tests/unit/auth/jwt.test.ts  (4 tests) 2ms
+ ✓ tests/unit/auth/password.test.ts  (2 tests) 937ms
+ ✓ tests/unit/smoke.test.ts  (1 test) 0ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 33 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/admin/applications.test.ts > Admin Applications API > PATCH /api/v1/admin/applications/:id > should approve application
+PrismaClientKnownRequestError: 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7315
+ ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+ ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+ ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+ ❯ tests/integration/admin/applications.test.ts:36:19
+     34|     await cleanDatabase();
+     35| 
+     36|     const admin = await createTestUser({
+       |                   ^
+     37|       email: "admin@test.com",
+     38|       role: "admin",
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/33]⎯
+
+ FAIL  tests/integration/admin/content-management.test.ts > Admin Content Management API > Scholarships > GET /api/v1/admin/scholarships > should filter scholarships by search
+ FAIL  tests/integration/admin/content-management.test.ts > Admin Content Management API > Scholarships > GET /api/v1/admin/scholarships > should filter scholarships by degree
+ FAIL  tests/integration/admin/content-management.test.ts > Admin Content Management API > Scholarships > GET /api/v1/admin/scholarships/[id] > should return 404 for non-existent scholarship
+ FAIL  tests/integration/admin/content-management.test.ts > Admin Content Management API > Scholarships > PUT /api/v1/admin/scholarships/[id] > should reject duplicate slug on update
+ FAIL  tests/integration/admin/content-management.test.ts > Admin Content Management API > Scholarships > DELETE /api/v1/admin/scholarships/[id] > should return 404 when deleting non-existent scholarship
+ FAIL  tests/integration/admin/content-management.test.ts > Admin Content Management API > Blog Posts > POST /api/v1/admin/blog-posts > should return 401 for unauthenticated requests
+ FAIL  tests/integration/admin/content-management.test.ts > Admin Content Management API > Blog Posts > GET /api/v1/admin/blog-posts > should filter blog posts by published=true
+ FAIL  tests/integration/admin/content-management.test.ts > Admin Content Management API > Blog Posts > GET /api/v1/admin/blog-posts > should filter blog posts by category
+PrismaClientKnownRequestError: 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7315
+ ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+ ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+ ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+ ❯ tests/integration/admin/content-management.test.ts:40:19
+     38|     await cleanDatabase();
+     39| 
+     40|     const admin = await createTestUser({
+       |                   ^
+     41|       email: "admin@test.com",
+     42|       role: "admin",
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/33]⎯
+
+ FAIL  tests/integration/admin/content-management.test.ts > Admin Content Management API > Scholarships > DELETE /api/v1/admin/scholarships/[id] > should return 404 when getting deleted scholarship
+PrismaClientKnownRequestError: 
+Invalid `testPrisma.scholarship.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/integration/admin/content-management.test.ts:529:58
+
+  526 });
+  527 
+  528 it("should return 404 when getting deleted scholarship", async () => {
+→ 529   const scholarship = await testPrisma.scholarship.create(
+Foreign key constraint violated: `scholarships_university_id_fkey (index)`
+ ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7315
+ ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+ ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+ ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+ ❯ tests/integration/admin/content-management.test.ts:529:29
+    527| 
+    528|       it("should return 404 when getting deleted scholarship", async (…
+    529|         const scholarship = await testPrisma.scholarship.create({
+       |                             ^
+    530|           data: {
+    531|             name: "Deleted Scholarship",
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/33]⎯
+
+ FAIL  tests/integration/admin/events.test.ts > Admin Events API > POST /api/v1/admin/events > should reject invalid input
+ FAIL  tests/integration/admin/events.test.ts > Admin Events API > GET /api/v1/admin/events > should list events
+ FAIL  tests/integration/admin/events.test.ts > Admin Events API > GET /api/v1/admin/events > should filter by status
+ FAIL  tests/integration/admin/events.test.ts > Admin Events API > PUT /api/v1/admin/events/:id > should update event
+ FAIL  tests/integration/admin/events.test.ts > Admin Events API > PUT /api/v1/admin/events/:id > should allow updating event with valid partial data
+ FAIL  tests/integration/admin/events.test.ts > Admin Events API > DELETE /api/v1/admin/events/:id > should handle non-existent event deletion gracefully
+ FAIL  tests/integration/admin/events.test.ts > Admin Events API > auth validation > should return 403 for non-admin user
+PrismaClientKnownRequestError: 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7315
+ ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+ ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+ ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+ ❯ tests/integration/admin/events.test.ts:35:19
+     33|     await cleanDatabase();
+     34| 
+     35|     const admin = await createTestUser({
+       |                   ^
+     36|       email: "admin@test.com",
+     37|       role: "admin",
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/33]⎯
+
+ FAIL  tests/integration/admin/partners.test.ts > Admin Partners API > GET /api/v1/admin/partners/applications > should list with pagination
+ FAIL  tests/integration/admin/partners.test.ts > Admin Partners API > PATCH /api/v1/admin/partners/applications/:userId > should approve partner application
+ FAIL  tests/integration/admin/partners.test.ts > Admin Partners API > PATCH /api/v1/admin/partners/applications/:userId > should handle non-existent partner gracefully
+ FAIL  tests/integration/admin/partners.test.ts > Admin Partners API > partner profile > should include partner profile data in list
+PrismaClientKnownRequestError: 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7315
+ ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+ ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+ ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+ ❯ tests/integration/admin/partners.test.ts:35:19
+     33|     await cleanDatabase();
+     34| 
+     35|     const admin = await createTestUser({
+       |                   ^
+     36|       email: "admin@test.com",
+     37|       role: "admin",
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/33]⎯
+
+ FAIL  tests/integration/admin/universities-courses.test.ts > Admin Universities & Courses API > POST /api/v1/admin/universities > should reject duplicate slug
+ FAIL  tests/integration/admin/universities-courses.test.ts > Admin Universities & Courses API > GET /api/v1/admin/universities > should filter universities by province
+ FAIL  tests/integration/admin/universities-courses.test.ts > Admin Universities & Courses API > GET /api/v1/admin/universities/[id] > should return 404 for non-existent university
+PrismaClientKnownRequestError: 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7315
+ ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+ ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+ ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+ ❯ tests/integration/admin/universities-courses.test.ts:38:19
+     36|     await cleanDatabase();
+     37| 
+     38|     const admin = await createTestUser({
+       |                   ^
+     39|       email: "admin@test.com",
+     40|       role: "admin",
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/33]⎯
+
+ FAIL  tests/integration/admin/users.test.ts > Admin Users API > POST /api/v1/admin/users > should handle duplicate email gracefully
+AssertionError: expected [ 409, 500 ] to include 201
+ ❯ tests/integration/admin/users.test.ts:85:26
+     83|       const res = await POST(req);
+     84|       // API returns conflict for duplicate email
+     85|       expect([409, 500]).toContain(res.status);
+       |                          ^
+     86|     });
+     87| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/33]⎯
+
+ FAIL  tests/integration/admin/users.test.ts > Admin Users API > GET /api/v1/admin/users/:id > should return 404 for non-existent user
+ FAIL  tests/integration/admin/users.test.ts > Admin Users API > PUT /api/v1/admin/users/:id > should handle non-existent user update gracefully
+PrismaClientKnownRequestError: 
+Invalid `testPrisma.user.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/helpers/auth.ts:11:26
+
+   8   passwordHash?: string;
+   9   status?: "active" | "inactive" | "suspended";
+  10 } = {}) {
+→ 11   return testPrisma.user.create(
+Unique constraint failed on the fields: (`email`)
+ ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7315
+ ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+ ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+ ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+ ❯ tests/integration/admin/users.test.ts:35:19
+     33|     await cleanDatabase();
+     34| 
+     35|     const admin = await createTestUser({
+       |                   ^
+     36|       email: "admin@test.com",
+     37|       role: "admin",
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/33]⎯
+
+ FAIL  tests/integration/auth/forgot-password.test.ts > Forgot/Reset Password flow > resets password with valid token
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.update()` invocation in
+/Users/lizhao/Documents/code/job/app/api/v1/auth/reset-password/route.ts:42:21
+
+  39 }
+  40 
+  41 const newHash = await hashPassword(parsed.data.password);
+→ 42 await prisma.user.update(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+ ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7315
+ ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+ ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+ ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+ ❯ handler app/api/v1/auth/reset-password/route.ts:42:3
+     40| 
+     41|   const newHash = await hashPassword(parsed.data.password);
+     42|   await prisma.user.update({
+       |   ^
+     43|     where: { id: user.id },
+     44|     data: { passwordHash: newHash },
+ ❯ tests/integration/auth/forgot-password.test.ts:62:17
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/33]⎯
+
+ FAIL  tests/integration/public/courses.test.ts > Public Courses API > GET /api/v1/public/courses > should list courses with default pagination
+PrismaClientKnownRequestError: 
+Invalid `testPrisma.course.create()` invocation in
+/Users/lizhao/Documents/code/job/tests/integration/public/courses.test.ts:45:33
+
+  42 
+  43 it("should list courses with default pagination", async () => {
+  44   for (let i = 0; i < 25; i++) {
+→ 45     await testPrisma.course.create(
+Foreign key constraint violated: `courses_university_id_fkey (index)`
+ ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7315
+ ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+ ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+ ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+ ❯ tests/integration/public/courses.test.ts:45:9
+     43|     it("should list courses with default pagination", async () => {
+     44|       for (let i = 0; i < 25; i++) {
+     45|         await testPrisma.course.create({
+       |         ^
+     46|           data: {
+     47|             name: `Course ${i}`,
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/33]⎯
+
+ FAIL  tests/integration/users/profile.test.ts > Profile APIs > PUT /api/v1/users/password > changes password with correct current password
+AssertionError: expected 400 to be 200 // Object.is equality
+
+- Expected
++ Received
+
+- 200
++ 400
+
+ ❯ tests/integration/users/profile.test.ts:79:26
+     77| 
+     78|       const res = await putPassword(req, { params: {} });
+     79|       expect(res.status).toBe(200);
+       |                          ^
+     80| 
+     81|       const user = await testPrisma.user.findUnique({ where: { id: use…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/33]⎯
+
+ FAIL  tests/unit/services/profile.service.test.ts > profile.service > changes password successfully
+PrismaClientKnownRequestError: 
+Invalid `prisma.user.update()` invocation in
+/Users/lizhao/Documents/code/job/src/server/services/profile.service.ts:82:22
+
+  79 }
+  80 
+  81 const newHash = await hashPassword(newPassword);
+→ 82 return prisma.user.update(
+An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+ ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7315
+ ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+ ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+ ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+ ❯ tests/unit/services/profile.service.test.ts:55:5
+     53| 
+     54|   it("changes password successfully", async () => {
+     55|     await changePassword(userId, "oldpass123", "newpass456");
+       |     ^
+     56| 
+     57|     const user = await testPrisma.user.findUnique({ where: { id: userI…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/33]⎯
+
+ FAIL  tests/unit/services/university.service.test.ts > University Service > updateUniversityInfo > should validate required fields before update
+AssertionError: expected '' to be truthy
+
+- Expected: 
+true
+
++ Received: 
+""
+
+ ❯ tests/unit/services/university.service.test.ts:42:32
+     40| 
+     41|       // This test intentionally fails to demonstrate blocking
+     42|       expect(invalidData.name).toBeTruthy();
+       |                                ^
+     43|     });
+     44| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/33]⎯
+
+ FAIL  tests/unit/services/user.service.test.ts > user.service > rejects duplicate email
+AssertionError: promise resolved "{ …(14) }" instead of rejecting
+
+- Expected
++ Received
+
+- [Error: rejected promise]
++ Object {
++   "avatar": null,
++   "continent": null,
++   "country": null,
++   "createdAt": 2026-04-25T14:03:42.609Z,
++   "email": "dup@test.com",
++   "gender": null,
++   "googleId": null,
++   "id": "2adf700d-90c7-41b3-b855-7a441e04bec2",
++   "name": "B",
++   "passwordHash": "$2b$12$QwViL9gNIZTGKnmglGW/cuUzUJs4PalBDvnKr8tqBWh9aS24AsWC.",
++   "phone": null,
++   "role": "student",
++   "status": "active",
++   "updatedAt": 2026-04-25T14:03:42.609Z,
++ }
+
+ ❯ tests/unit/services/user.service.test.ts:29:5
+     27|     await expect(
+     28|       createUser({ name: "B", email: "dup@test.com", password: "pass56…
+     29|     ).rejects.toThrow();
+       |     ^
+     30|   });
+     31| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/33]⎯
+
+ Test Files  12 failed | 22 passed (34)
+      Tests  33 failed | 254 passed (287)
+   Start at  22:02:56
+   Duration  47.79s (transform 476ms, setup 0ms, collect 1.04s, tests 46.32s, environment 0ms, prepare 72ms)
+

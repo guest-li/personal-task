@@ -72,7 +72,7 @@ export default function ConsultationPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Benefits Column */}
           <div>
-            <h2 className="text-3xl font-bold text-brand-800 mb-8">What You'll Get</h2>
+            <h2 className="text-3xl font-bold text-brand-800 mb-8">What You&apos;ll Get</h2>
 
             <div className="space-y-4 mb-8">
               {[
@@ -194,8 +194,8 @@ export default function ConsultationPage() {
                   >
                     <option value="">Select qualification</option>
                     <option value="high_school">High School</option>
-                    <option value="bachelor">Bachelor's Degree</option>
-                    <option value="master">Master's Degree</option>
+                    <option value="bachelor">Bachelor&apos;s Degree</option>
+                    <option value="master">Master&apos;s Degree</option>
                   </select>
                 </div>
                 <div>

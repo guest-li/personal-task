@@ -2,121 +2,129 @@ import { PublicLayout } from "@/components/public/PublicLayout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Us",
-  description: "Learn about our mission, vision, and commitment to student success.",
+  title: "About MalishaEdu - Our Mission & Story",
+  description: "Learn about MalishaEdu's mission to help students find their perfect education path in China.",
 };
 
 export default function AboutPage() {
   return (
     <PublicLayout>
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-6">About Us</h1>
+      <section className="bg-gradient-to-r from-brand-700 to-brand-800 text-white py-16 md:py-24">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">About MalishaEdu</h1>
+          <p className="text-xl text-brand-100 max-w-2xl mx-auto">
+            Empowering students worldwide to achieve their educational dreams in China
+          </p>
+        </div>
+      </section>
 
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <div>
-            <h2 className="text-2xl font-bold mb-4">Who We Are</h2>
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              Founded in 2015, we are a leading education consultancy dedicated to helping international
-              students pursue their dreams of studying in China. With headquarters in multiple cities and
-              partnerships with over 50 top universities, we've successfully guided thousands of students
-              to achieve their educational goals.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              Our team of experienced consultants brings diverse expertise and genuine passion for
-              transforming lives through education. We pride ourselves on our personalized approach,
-              comprehensive support, and unwavering commitment to our students' success.
-            </p>
-          </div>
-          <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg p-8 flex flex-col justify-center">
-            <div className="text-center">
-              <div className="text-5xl font-bold mb-2">10K+</div>
-              <p className="text-blue-100 mb-6">Students Successfully Placed</p>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { number: "95%", label: "Acceptance Rate" },
-                  { number: "50+", label: "Partner Universities" },
-                ].map((stat, index) => (
-                  <div key={index}>
-                    <div className="text-3xl font-bold">{stat.number}</div>
-                    <p className="text-sm text-blue-100">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">Our Mission & Vision</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-blue-900 mb-3">Our Mission</h3>
-              <p className="text-gray-700">
-                To provide transparent, personalized, and comprehensive educational guidance, helping
-                students from around the world gain access to quality higher education in China and
-                achieve their full potential.
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <div className="bg-brand-50 p-8 rounded-lg">
+              <h2 className="text-3xl font-bold text-brand-700 mb-4">Our Mission</h2>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                To connect international students with world-class universities in China and provide expert guidance
+                through every step of their educational journey. We believe every student deserves access to quality
+                education regardless of their background.
               </p>
             </div>
-            <div className="bg-green-50 border border-green-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-green-900 mb-3">Our Vision</h3>
-              <p className="text-gray-700">
-                To be the most trusted bridge connecting aspiring students with world-class educational
-                opportunities in China, fostering global understanding and cultural exchange.
+            <div className="bg-brand-50 p-8 rounded-lg">
+              <h2 className="text-3xl font-bold text-brand-700 mb-4">Our Vision</h2>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                To be the most trusted platform for international students seeking education in China, known for our
+                expert guidance, transparent service, and genuine care for student success. We envision a world where
+                geography is no barrier to quality education.
               </p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">Our Core Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">Our Core Values</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
               {
-                title: "Integrity",
-                description: "We operate with honesty and transparency in all our dealings",
+                title: "Student-First Approach",
+                description: "Every decision we make prioritizes student success and well-being above all else.",
+              },
+              {
+                title: "Transparency",
+                description: "We believe in honest communication and full transparency in all our dealings.",
               },
               {
                 title: "Excellence",
-                description: "We strive for the highest quality in our services and support",
+                description: "We maintain the highest standards in everything we do, from advice to service delivery.",
               },
-              {
-                title: "Student-Centric",
-                description: "Your success is our primary focus and driving motivation",
-              },
-              {
-                title: "Innovation",
-                description: "We continuously improve our processes and services",
-              },
-              {
-                title: "Empathy",
-                description: "We understand and support students through every challenge",
-              },
-              {
-                title: "Partnership",
-                description: "We work collaboratively with universities and students",
-              },
-            ].map((value, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{value.title}</h3>
+            ].map((value) => (
+              <div key={value.title} className="bg-white p-6 rounded-lg border border-gray-200">
+                <h3 className="text-xl font-bold text-brand-700 mb-3">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="bg-gray-50 rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">Ready to Start Your Journey?</h2>
-          <p className="text-gray-600 mb-6">
-            Join thousands of successful students who've achieved their dreams with us
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-12">Our Team</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+            Our team consists of education consultants, university liaisons, and customer service professionals with
+            years of experience in international education.
           </p>
-          <Link
-            href="/get-free-consultation"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded font-semibold hover:bg-blue-700"
-          >
-            Schedule Your Consultation
-          </Link>
-        </section>
-      </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {[
+              { role: "15+", desc: "Years of combined experience" },
+              { role: "50+", desc: "Expert consultants on staff" },
+              { role: "10,000+", desc: "Students successfully placed" },
+            ].map((item) => (
+              <div key={item.role} className="p-6">
+                <p className="text-5xl font-bold text-brand-700 mb-2">{item.role}</p>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">Our Journey</h2>
+          <div className="max-w-3xl mx-auto">
+            {[
+              { year: "2008", event: "MalishaEdu founded with a vision to bridge international education" },
+              { year: "2012", event: "Expanded to serve students from 50+ countries" },
+              { year: "2016", event: "Partnered with 70+ Chinese universities" },
+              { year: "2020", event: "Launched digital platform serving 10,000+ students" },
+            ].map((milestone) => (
+              <div key={milestone.year} className="flex gap-6 mb-8">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-brand-600 text-white font-bold">
+                    {milestone.year.slice(-2)}
+                  </div>
+                </div>
+                <div className="pt-2">
+                  <h3 className="font-bold text-lg text-gray-900">{milestone.year}</h3>
+                  <p className="text-gray-600">{milestone.event}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-brand-700 text-white text-center">
+        <h2 className="text-4xl font-bold mb-6">Ready to Join Our Success Stories?</h2>
+        <Link
+          href="/get-free-consultation"
+          className="inline-block bg-white text-brand-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+        >
+          Book Free Consultation
+        </Link>
+      </section>
     </PublicLayout>
   );
 }

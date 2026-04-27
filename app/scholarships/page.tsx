@@ -60,7 +60,7 @@ export default function ScholarshipsPage() {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Find Scholarships</h1>
           <p className="text-xl text-brand-100 max-w-2xl">
-            Explore funding opportunities and scholarships to study in China's top universities
+            Explore funding opportunities and scholarships to study in China&apos;s top universities
           </p>
         </div>
       </div>
