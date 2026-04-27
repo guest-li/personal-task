@@ -1,6 +1,12 @@
 import { prisma } from "@/server/db";
 import { hashPassword } from "@/server/auth/password";
 import type { User, Application, Event, Role, ApplicationStatus, Prisma } from "@prisma/client";
+import type {
+  CreateCourseInput,
+  UpdateCourseInput,
+  CreateScholarshipInput,
+  UpdateScholarshipInput,
+} from "@/server/validators/admin";
 
 // Filter interfaces
 interface UserFilters {
@@ -441,9 +447,9 @@ export async function getUniversityDetailAdmin(id: string) {
 export async function createUniversityAdmin(data: Prisma.UniversityCreateInput) {
   try {
     return await prisma.university.create({ data });
-  } catch (e: any) {
-    if (e.code === "P2002") throw new Error("Slug already exists");
-    throw e;
+  } catch (error: any) {
+    if (error.code === "P2002") throw new Error("Slug already exists");
+    throw error;
   }
 }
 
@@ -453,9 +459,9 @@ export async function updateUniversityAdmin(
 ) {
   try {
     return await prisma.university.update({ where: { id }, data });
-  } catch (e: any) {
-    if (e.code === "P2002") throw new Error("Slug already exists");
-    throw e;
+  } catch (error: any) {
+    if (error.code === "P2002") throw new Error("Slug already exists");
+    throw error;
   }
 }
 
@@ -506,7 +512,7 @@ export async function getCourseDetailAdmin(id: string) {
   });
 }
 
-export async function createCourseAdmin(data: any) {
+export async function createCourseAdmin(data: CreateCourseInput) {
   try {
     const { universityId, ...rest } = data;
     return await prisma.course.create({
@@ -516,16 +522,16 @@ export async function createCourseAdmin(data: any) {
       },
       include: { university: { select: { id: true, name: true } } },
     });
-  } catch (e: any) {
-    if (e.code === "P2002") throw new Error("Slug already exists");
-    throw e;
+  } catch (error: any) {
+    if (error.code === "P2002") throw new Error("Slug already exists");
+    throw error;
   }
 }
 
-export async function updateCourseAdmin(id: string, data: any) {
+export async function updateCourseAdmin(id: string, data: UpdateCourseInput) {
   try {
     const { universityId, ...rest } = data;
-    const updateData: any = rest;
+    const updateData: Prisma.CourseUpdateInput = rest;
     if (universityId) {
       updateData.university = { connect: { id: universityId } };
     }
@@ -534,9 +540,9 @@ export async function updateCourseAdmin(id: string, data: any) {
       data: updateData,
       include: { university: { select: { id: true, name: true } } },
     });
-  } catch (e: any) {
-    if (e.code === "P2002") throw new Error("Slug already exists");
-    throw e;
+  } catch (error: any) {
+    if (error.code === "P2002") throw new Error("Slug already exists");
+    throw error;
   }
 }
 
@@ -587,7 +593,7 @@ export async function getScholarshipDetailAdmin(id: string) {
   });
 }
 
-export async function createScholarshipAdmin(data: any) {
+export async function createScholarshipAdmin(data: CreateScholarshipInput) {
   try {
     const { universityId, ...rest } = data;
     return await prisma.scholarship.create({
@@ -597,19 +603,19 @@ export async function createScholarshipAdmin(data: any) {
       },
       include: { university: { select: { id: true, name: true } } },
     });
-  } catch (e: any) {
-    if (e.code === "P2002") throw new Error("Slug already exists");
-    throw e;
+  } catch (error: any) {
+    if (error.code === "P2002") throw new Error("Slug already exists");
+    throw error;
   }
 }
 
 export async function updateScholarshipAdmin(
   id: string,
-  data: any,
+  data: UpdateScholarshipInput,
 ) {
   try {
     const { universityId, ...rest } = data;
-    const updateData: any = rest;
+    const updateData: Prisma.ScholarshipUpdateInput = rest;
     if (universityId) {
       updateData.university = { connect: { id: universityId } };
     }
@@ -618,9 +624,9 @@ export async function updateScholarshipAdmin(
       data: updateData,
       include: { university: { select: { id: true, name: true } } },
     });
-  } catch (e: any) {
-    if (e.code === "P2002") throw new Error("Slug already exists");
-    throw e;
+  } catch (error: any) {
+    if (error.code === "P2002") throw new Error("Slug already exists");
+    throw error;
   }
 }
 
@@ -677,9 +683,9 @@ export async function createBlogPostAdmin(data: Prisma.BlogPostCreateInput) {
       ...(data.published === true && !data.publishedAt && { publishedAt: new Date() }),
     };
     return await prisma.blogPost.create({ data: finalData });
-  } catch (e: any) {
-    if (e.code === "P2002") throw new Error("Slug already exists");
-    throw e;
+  } catch (error: any) {
+    if (error.code === "P2002") throw new Error("Slug already exists");
+    throw error;
   }
 }
 
@@ -691,9 +697,9 @@ export async function updateBlogPostAdmin(id: string, data: Prisma.BlogPostUpdat
       ...(data.published === true && data.publishedAt === undefined && { publishedAt: new Date() }),
     };
     return await prisma.blogPost.update({ where: { id }, data: finalData });
-  } catch (e: any) {
-    if (e.code === "P2002") throw new Error("Slug already exists");
-    throw e;
+  } catch (error: any) {
+    if (error.code === "P2002") throw new Error("Slug already exists");
+    throw error;
   }
 }
 
