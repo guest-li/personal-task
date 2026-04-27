@@ -206,15 +206,15 @@ export default function ScholarshipDetailPage({
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Language
-          </label>
+          <label className="block text-sm font-semibold text-gray-700 mb-2">Language</label>
           <input
             type="text"
             name="language"
             value={form.language}
             onChange={handleChange}
-            className="w-full border border-gray-300 px-3 py-2 rounded"
+            required
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="e.g., English, Mandarin, etc."
           />
         </div>
         <div>
