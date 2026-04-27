@@ -49,12 +49,15 @@ model User {
   createdAt    DateTime   @default(now()) @map("created_at")
   updatedAt    DateTime   @updatedAt @map("updated_at")
 
-  studentProfile     StudentProfile?
-  partnerProfile     PartnerProfile?
-  certificates       Certificate[]
-  applications       Application[]
-  eventRegistrations EventRegistration[]
-  notifications      Notification[]
+  studentProfile       StudentProfile?
+  partnerProfile       PartnerProfile?
+  certificates         Certificate[]
+  applications         Application[]
+  eventRegistrations   EventRegistration[]
+  notifications        Notification[]
+  studentConsultations Consultation[] @relation("StudentConsultations")
+  consultantConsultations Consultation[] @relation("ConsultantConsultations")
+  consultantAvailability ConsultantAvailability[] @relation("ConsultantAvailability")
 
   @@map("users")
 }
@@ -277,4 +280,56 @@ model BlogPost {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("blog_posts")
+}
+
+enum ConsultationStatus {
+  pending
+  confirmed
+  completed
+  cancelled
+}
+
+model Consultation {
+  id String @id @default(uuid())
+  studentId String @map("student_id")
+  student User @relation("StudentConsultations", fields: [studentId], references: [id], onDelete: Cascade)
+  consultantId String? @map("consultant_id")
+  consultant User? @relation("ConsultantConsultations", fields: [consultantId], references: [id], onDelete: SetNull)
+
+  title String
+  description String?
+  status ConsultationStatus @default(pending)
+
+  scheduledAt DateTime? @map("scheduled_at")
+  duration Int? // duration in minutes
+  meetingUrl String? @map("meeting_url")
+
+  price Decimal @db.Decimal(10, 2)
+  paid Boolean @default(false)
+  stripePaymentId String? @unique @map("stripe_payment_id")
+
+  notes String?
+  feedback String?
+  feedbackRating Int?
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("consultations")
+}
+
+model ConsultantAvailability {
+  id String @id @default(uuid())
+  consultantId String @map("consultant_id")
+  consultant User @relation("ConsultantAvailability", fields: [consultantId], references: [id], onDelete: Cascade)
+
+  dayOfWeek Int // 0-6 (Sunday-Saturday)
+  startTime String @map("start_time") // HH:MM format
+  endTime String @map("end_time") // HH:MM format
+  isAvailable Boolean @default(true) @map("is_available")
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@unique([consultantId, dayOfWeek, startTime])
+  @@map("consultant_availability")
 }
