@@ -163,19 +163,15 @@ export default function ScholarshipCreatePage() {
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
-            Language *
+            Language
           </label>
-          <select
+          <input
+            type="text"
             name="language"
             value={form.language}
             onChange={handleChange}
-            required
             className="w-full border border-gray-300 px-3 py-2 rounded"
-          >
-            <option value="">Select a language</option>
-            <option value="English">English</option>
-            <option value="Chinese">Chinese</option>
-          </select>
+          />
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
