@@ -34,20 +34,20 @@ export default function CourseDetailPage({
         .then((r) => r.json())
         .then((d) => {
           setForm({
-            name: d.name,
-            slug: d.slug,
-            degree: d.degree || "",
-            language: d.language || "",
-            major: d.major || "",
-            universityId: d.universityId || "",
-            intake: d.intake || "",
-            tuition: d.tuition ? String(d.tuition) : "",
-            accommodation: d.accommodation ? String(d.accommodation) : "",
-            serviceCharge: d.serviceCharge ? String(d.serviceCharge) : "",
-            rating: d.rating ? String(d.rating) : "",
-            tags: d.tags ? (Array.isArray(d.tags) ? d.tags.join(", ") : d.tags) : "",
-            province: d.province || "",
-            city: d.city || "",
+            name: d.course.name,
+            slug: d.course.slug,
+            degree: d.course.degree || "",
+            language: d.course.language || "",
+            major: d.course.major || "",
+            universityId: d.course.universityId || "",
+            intake: d.course.intake || "",
+            tuition: d.course.tuition ? String(d.course.tuition) : "",
+            accommodation: d.course.accommodation ? String(d.course.accommodation) : "",
+            serviceCharge: d.course.serviceCharge ? String(d.course.serviceCharge) : "",
+            rating: d.course.rating ? String(d.course.rating) : "",
+            tags: d.course.tags ? (Array.isArray(d.course.tags) ? d.course.tags.join(", ") : d.course.tags) : "",
+            province: d.course.province || "",
+            city: d.course.city || "",
           });
           setLoading(false);
         })
