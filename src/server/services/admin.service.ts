@@ -506,10 +506,14 @@ export async function getCourseDetailAdmin(id: string) {
   });
 }
 
-export async function createCourseAdmin(data: Prisma.CourseCreateInput) {
+export async function createCourseAdmin(data: any) {
   try {
+    const { universityId, ...rest } = data;
     return await prisma.course.create({
-      data,
+      data: {
+        ...rest,
+        university: { connect: { id: universityId } },
+      },
       include: { university: { select: { id: true, name: true } } },
     });
   } catch (e: any) {
@@ -518,11 +522,16 @@ export async function createCourseAdmin(data: Prisma.CourseCreateInput) {
   }
 }
 
-export async function updateCourseAdmin(id: string, data: Prisma.CourseUpdateInput) {
+export async function updateCourseAdmin(id: string, data: any) {
   try {
+    const { universityId, ...rest } = data;
+    const updateData: any = rest;
+    if (universityId) {
+      updateData.university = { connect: { id: universityId } };
+    }
     return await prisma.course.update({
       where: { id },
-      data,
+      data: updateData,
       include: { university: { select: { id: true, name: true } } },
     });
   } catch (e: any) {
@@ -578,10 +587,14 @@ export async function getScholarshipDetailAdmin(id: string) {
   });
 }
 
-export async function createScholarshipAdmin(data: Prisma.ScholarshipCreateInput) {
+export async function createScholarshipAdmin(data: any) {
   try {
+    const { universityId, ...rest } = data;
     return await prisma.scholarship.create({
-      data,
+      data: {
+        ...rest,
+        university: { connect: { id: universityId } },
+      },
       include: { university: { select: { id: true, name: true } } },
     });
   } catch (e: any) {
@@ -592,12 +605,17 @@ export async function createScholarshipAdmin(data: Prisma.ScholarshipCreateInput
 
 export async function updateScholarshipAdmin(
   id: string,
-  data: Prisma.ScholarshipUpdateInput,
+  data: any,
 ) {
   try {
+    const { universityId, ...rest } = data;
+    const updateData: any = rest;
+    if (universityId) {
+      updateData.university = { connect: { id: universityId } };
+    }
     return await prisma.scholarship.update({
       where: { id },
-      data,
+      data: updateData,
       include: { university: { select: { id: true, name: true } } },
     });
   } catch (e: any) {
