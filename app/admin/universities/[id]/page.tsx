@@ -30,16 +30,16 @@ export default function UniversityDetailPage({
         .then((r) => r.json())
         .then((d) => {
           setForm({
-            name: d.name,
-            slug: d.slug,
-            logo: d.logo || "",
-            banner: d.banner || "",
-            worldRank: d.worldRank ? String(d.worldRank) : "",
-            location: d.location || "",
-            studentCount: d.studentCount ? String(d.studentCount) : "",
-            tags: d.tags ? (Array.isArray(d.tags) ? d.tags.join(", ") : d.tags) : "",
-            intake: d.intake || "",
-            province: d.province || "",
+            name: d.university.name,
+            slug: d.university.slug,
+            logo: d.university.logo || "",
+            banner: d.university.banner || "",
+            worldRank: d.university.worldRank ? String(d.university.worldRank) : "",
+            location: d.university.location || "",
+            studentCount: d.university.studentCount ? String(d.university.studentCount) : "",
+            tags: d.university.tags ? (Array.isArray(d.university.tags) ? d.university.tags.join(", ") : d.university.tags) : "",
+            intake: d.university.intake || "",
+            province: d.university.province || "",
           });
           setLoading(false);
         })

@@ -32,18 +32,18 @@ export default function ScholarshipDetailPage({
         .then((r) => r.json())
         .then((d) => {
           setForm({
-            name: d.name,
-            slug: d.slug,
-            type: d.type || "",
-            degree: d.degree || "",
-            major: d.major || "",
-            universityId: d.universityId || "",
-            intake: d.intake || "",
-            language: d.language || "",
-            province: d.province || "",
-            city: d.city || "",
-            tuition: d.tuition ? String(d.tuition) : "",
-            accommodation: d.accommodation ? String(d.accommodation) : "",
+            name: d.scholarship.name,
+            slug: d.scholarship.slug,
+            type: d.scholarship.type || "",
+            degree: d.scholarship.degree || "",
+            major: d.scholarship.major || "",
+            universityId: d.scholarship.universityId || "",
+            intake: d.scholarship.intake || "",
+            language: d.scholarship.language || "",
+            province: d.scholarship.province || "",
+            city: d.scholarship.city || "",
+            tuition: d.scholarship.tuition ? String(d.scholarship.tuition) : "",
+            accommodation: d.scholarship.accommodation ? String(d.scholarship.accommodation) : "",
           });
           setLoading(false);
         })
@@ -206,20 +206,16 @@ export default function ScholarshipDetailPage({
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Language *
-          </label>
-          <select
+          <label className="block text-sm font-semibold text-gray-700 mb-2">Language</label>
+          <input
+            type="text"
             name="language"
             value={form.language}
             onChange={handleChange}
             required
-            className="w-full border border-gray-300 px-3 py-2 rounded"
-          >
-            <option value="">Select a language</option>
-            <option value="English">English</option>
-            <option value="Chinese">Chinese</option>
-          </select>
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="e.g., English, Mandarin, etc."
+          />
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">

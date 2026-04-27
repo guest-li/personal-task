@@ -1,6 +1,10 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { NextRequest } from "next/server";
-import { GET, POST } from "@/app/api/v1/admin/scholarships/route";
+import { GET as GET_UNI, POST as POST_UNI } from "@/app/api/v1/admin/universities/route";
+import { GET as GET_UNI_DETAIL, PUT as PUT_UNI, DELETE as DELETE_UNI } from "@/app/api/v1/admin/universities/[id]/route";
+import { GET as GET_COURSE, POST as POST_COURSE } from "@/app/api/v1/admin/courses/route";
+import { GET as GET_COURSE_DETAIL, PUT as PUT_COURSE, DELETE as DELETE_COURSE } from "@/app/api/v1/admin/courses/[id]/route";
+import { GET as GET_SCHOLARSHIP, POST as POST_SCHOLARSHIP } from "@/app/api/v1/admin/scholarships/route";
 import { GET as GET_SCHOLARSHIP_DETAIL, PUT as PUT_SCHOLARSHIP, DELETE as DELETE_SCHOLARSHIP } from "@/app/api/v1/admin/scholarships/[id]/route";
 import { GET as GET_BLOG, POST as POST_BLOG } from "@/app/api/v1/admin/blog-posts/route";
 import { GET as GET_BLOG_DETAIL, PUT as PUT_BLOG, DELETE as DELETE_BLOG } from "@/app/api/v1/admin/blog-posts/[id]/route";
@@ -59,11 +63,681 @@ describe("Admin Content Management API", () => {
       role: student.role,
     });
 
-    // Create a university for scholarship tests
+    // Create a university for course/scholarship tests
     const uni = await testPrisma.university.create({
       data: { name: "Test University", slug: "test-uni" },
     });
     universityId = uni.id;
+  });
+
+  describe("Universities", () => {
+    describe("POST /api/v1/admin/universities", () => {
+      it("should return 401 for unauthenticated requests", async () => {
+        const req = new NextRequest("http://localhost/api/v1/admin/universities", {
+          method: "POST",
+          body: JSON.stringify({
+            name: "Test University",
+            slug: "test-university",
+            location: "Test Location",
+          }),
+          headers: { "Content-Type": "application/json" },
+        });
+
+        const res = await POST_UNI(req);
+        expect(res.status).toBe(401);
+      });
+
+      it("should return 403 for non-admin users", async () => {
+        const req = makeAdminRequest(
+          "POST",
+          nonAdminToken,
+          "http://localhost/api/v1/admin/universities",
+          {
+            name: "Test University",
+            slug: "test-university",
+            location: "Test Location",
+          },
+        );
+
+        const res = await POST_UNI(req);
+        expect(res.status).toBe(403);
+      });
+
+      it("should create a university for admin users", async () => {
+        const req = makeAdminRequest(
+          "POST",
+          adminToken,
+          "http://localhost/api/v1/admin/universities",
+          {
+            name: "Stanford University",
+            slug: "stanford-university",
+            location: "Stanford, CA",
+            worldRank: 3,
+            studentCount: 17000,
+            tags: ["engineering", "research"],
+            province: "CA",
+          },
+        );
+
+        const res = await POST_UNI(req);
+        expect(res.status).toBe(201);
+        const data = await res.json();
+        expect(data.university).toBeDefined();
+        expect(data.university.name).toBe("Stanford University");
+        expect(data.university.slug).toBe("stanford-university");
+        expect(data.university.worldRank).toBe(3);
+        expect(data.university.studentCount).toBe(17000);
+      });
+
+      it("should return 400 for duplicate slug", async () => {
+        await testPrisma.university.create({
+          data: {
+            name: "Existing University",
+            slug: "existing-slug",
+            location: "Somewhere",
+          },
+        });
+
+        const req = makeAdminRequest(
+          "POST",
+          adminToken,
+          "http://localhost/api/v1/admin/universities",
+          {
+            name: "Another University",
+            slug: "existing-slug",
+            location: "Somewhere Else",
+          },
+        );
+
+        const res = await POST_UNI(req);
+        expect(res.status).toBe(400);
+        const data = await res.json();
+        expect(data.error).toBe("Slug already exists");
+      });
+    });
+
+    describe("GET /api/v1/admin/universities", () => {
+      it("should list universities with pagination", async () => {
+        await testPrisma.university.create({
+          data: { name: "University 1", slug: "university-1", location: "Location 1" },
+        });
+        await testPrisma.university.create({
+          data: { name: "University 2", slug: "university-2", location: "Location 2" },
+        });
+
+        const req = makeAdminRequest("GET", adminToken, "http://localhost/api/v1/admin/universities?page=1&limit=10");
+
+        const res = await GET_UNI(req);
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        expect(data.universities).toBeDefined();
+        expect(Array.isArray(data.universities)).toBe(true);
+        expect(data.pagination).toBeDefined();
+      });
+
+      it("should filter universities by province", async () => {
+        await testPrisma.university.create({
+          data: { name: "Ontario Uni", slug: "ontario-uni", location: "Toronto", province: "Ontario" },
+        });
+        await testPrisma.university.create({
+          data: { name: "BC Uni", slug: "bc-uni", location: "Vancouver", province: "BC" },
+        });
+
+        const req = makeAdminRequest("GET", adminToken, "http://localhost/api/v1/admin/universities?page=1&limit=10&province=Ontario");
+
+        const res = await GET_UNI(req);
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        const allOntario = data.universities.every((u: any) => u.province === "Ontario");
+        expect(allOntario).toBe(true);
+      });
+
+      it("should search universities by name", async () => {
+        await testPrisma.university.create({
+          data: { name: "Harvard University", slug: "harvard", location: "Cambridge" },
+        });
+        await testPrisma.university.create({
+          data: { name: "Yale University", slug: "yale", location: "New Haven" },
+        });
+
+        const req = makeAdminRequest("GET", adminToken, "http://localhost/api/v1/admin/universities?page=1&limit=10&search=Harvard");
+
+        const res = await GET_UNI(req);
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        expect(data.universities.length).toBeGreaterThan(0);
+      });
+    });
+
+    describe("GET /api/v1/admin/universities/:id", () => {
+      it("should get university detail", async () => {
+        const uni = await testPrisma.university.create({
+          data: { name: "MIT", slug: "mit", location: "Cambridge, MA", worldRank: 1 },
+        });
+
+        const req = makeAdminRequest("GET", adminToken, `http://localhost/api/v1/admin/universities/${uni.id}`);
+
+        const res = await GET_UNI_DETAIL(req, { params: { id: uni.id } });
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        expect(data.university).toBeDefined();
+        expect(data.university.id).toBe(uni.id);
+        expect(data.university.name).toBe("MIT");
+      });
+
+      it("should return 404 for non-existent university", async () => {
+        const req = makeAdminRequest("GET", adminToken, "http://localhost/api/v1/admin/universities/fake-id");
+
+        const res = await GET_UNI_DETAIL(req, { params: { id: "fake-id" } });
+        expect(res.status).toBe(404);
+      });
+    });
+
+    describe("PUT /api/v1/admin/universities/:id", () => {
+      it("should update a university", async () => {
+        const uni = await testPrisma.university.create({
+          data: { name: "Original Name", slug: "original-name", location: "Original Location" },
+        });
+
+        const req = makeAdminRequest("PUT", adminToken, `http://localhost/api/v1/admin/universities/${uni.id}`, {
+          name: "Updated Name",
+          location: "Updated Location",
+          worldRank: 10,
+        });
+
+        const res = await PUT_UNI(req, { params: { id: uni.id } });
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        expect(data.university.name).toBe("Updated Name");
+        expect(data.university.location).toBe("Updated Location");
+        expect(data.university.worldRank).toBe(10);
+      });
+
+      it("should reject duplicate slug on update", async () => {
+        const uni1 = await testPrisma.university.create({
+          data: { name: "University 1", slug: "university-1", location: "Location 1" },
+        });
+        await testPrisma.university.create({
+          data: { name: "University 2", slug: "university-2", location: "Location 2" },
+        });
+
+        const req = makeAdminRequest("PUT", adminToken, `http://localhost/api/v1/admin/universities/${uni1.id}`, {
+          slug: "university-2",
+        });
+
+        const res = await PUT_UNI(req, { params: { id: uni1.id } });
+        expect(res.status).toBe(400);
+        const data = await res.json();
+        expect(data.error).toBe("Slug already exists");
+      });
+
+      it("should return 404 for non-existent university", async () => {
+        const req = makeAdminRequest("PUT", adminToken, "http://localhost/api/v1/admin/universities/fake-id", {
+          name: "Updated",
+        });
+
+        const res = await PUT_UNI(req, { params: { id: "fake-id" } });
+        expect(res.status).toBe(404);
+      });
+    });
+
+    describe("DELETE /api/v1/admin/universities/:id", () => {
+      it("should delete a university", async () => {
+        const uni = await testPrisma.university.create({
+          data: { name: "To Delete", slug: "to-delete", location: "Somewhere" },
+        });
+
+        const req = makeAdminRequest("DELETE", adminToken, `http://localhost/api/v1/admin/universities/${uni.id}`);
+
+        const res = await DELETE_UNI(req, { params: { id: uni.id } });
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        expect(data.success).toBe(true);
+
+        const deleted = await testPrisma.university.findUnique({ where: { id: uni.id } });
+        expect(deleted).toBeNull();
+      });
+
+      it("should return 404 when deleting non-existent university", async () => {
+        const req = makeAdminRequest("DELETE", adminToken, "http://localhost/api/v1/admin/universities/fake-id");
+
+        const res = await DELETE_UNI(req, { params: { id: "fake-id" } });
+        expect(res.status).toBe(404);
+      });
+
+      it("should return 404 when getting deleted university", async () => {
+        const uni = await testPrisma.university.create({
+          data: { name: "Deleted Uni", slug: "deleted-uni", location: "Somewhere" },
+        });
+
+        await testPrisma.university.delete({ where: { id: uni.id } });
+
+        const req = makeAdminRequest("GET", adminToken, `http://localhost/api/v1/admin/universities/${uni.id}`);
+
+        const res = await GET_UNI_DETAIL(req, { params: { id: uni.id } });
+        expect(res.status).toBe(404);
+      });
+    });
+  });
+
+  describe("Courses", () => {
+    describe("POST /api/v1/admin/courses", () => {
+      it("should return 401 for unauthenticated requests", async () => {
+        const req = new NextRequest("http://localhost/api/v1/admin/courses", {
+          method: "POST",
+          body: JSON.stringify({
+            name: "Test Course",
+            slug: "test-course",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          }),
+          headers: { "Content-Type": "application/json" },
+        });
+
+        const res = await POST_COURSE(req);
+        expect(res.status).toBe(401);
+      });
+
+      it("should return 403 for non-admin users", async () => {
+        const req = makeAdminRequest(
+          "POST",
+          nonAdminToken,
+          "http://localhost/api/v1/admin/courses",
+          {
+            name: "Test Course",
+            slug: "test-course",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        );
+
+        const res = await POST_COURSE(req);
+        expect(res.status).toBe(403);
+      });
+
+      it("should create a course for admin users", async () => {
+        const req = makeAdminRequest(
+          "POST",
+          adminToken,
+          "http://localhost/api/v1/admin/courses",
+          {
+            name: "Computer Science",
+            slug: "computer-science",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 25000,
+            accommodation: 8000,
+            serviceCharge: 2000,
+            rating: 4.5,
+            tags: ["programming", "engineering"],
+            province: "Ontario",
+            city: "Toronto",
+          },
+        );
+
+        const res = await POST_COURSE(req);
+        expect(res.status).toBe(201);
+        const data = await res.json();
+        expect(data.course).toBeDefined();
+        expect(data.course.name).toBe("Computer Science");
+        expect(data.course.slug).toBe("computer-science");
+        expect(data.course.degree).toBe("Bachelor");
+        expect(Number(data.course.tuition)).toBe(25000);
+      });
+
+      it("should return 400 for duplicate slug", async () => {
+        await testPrisma.course.create({
+          data: {
+            name: "Existing Course",
+            slug: "existing-slug",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        });
+
+        const req = makeAdminRequest(
+          "POST",
+          adminToken,
+          "http://localhost/api/v1/admin/courses",
+          {
+            name: "Another Course",
+            slug: "existing-slug",
+            degree: "Master",
+            language: "English",
+            major: "Math",
+            universityId,
+            intake: "September",
+            tuition: 30000,
+            accommodation: 8000,
+            serviceCharge: 2000,
+          },
+        );
+
+        const res = await POST_COURSE(req);
+        expect(res.status).toBe(400);
+        const data = await res.json();
+        expect(data.error).toBe("Slug already exists");
+      });
+    });
+
+    describe("GET /api/v1/admin/courses", () => {
+      it("should list courses with pagination", async () => {
+        await testPrisma.course.create({
+          data: {
+            name: "Course 1",
+            slug: "course-1",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        });
+        await testPrisma.course.create({
+          data: {
+            name: "Course 2",
+            slug: "course-2",
+            degree: "Master",
+            language: "English",
+            major: "Data Science",
+            universityId,
+            intake: "September",
+            tuition: 30000,
+            accommodation: 8000,
+            serviceCharge: 2000,
+          },
+        });
+
+        const req = makeAdminRequest("GET", adminToken, "http://localhost/api/v1/admin/courses?page=1&limit=10");
+
+        const res = await GET_COURSE(req);
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        expect(data.courses).toBeDefined();
+        expect(Array.isArray(data.courses)).toBe(true);
+        expect(data.pagination).toBeDefined();
+      });
+
+      it("should filter courses by degree", async () => {
+        await testPrisma.course.create({
+          data: {
+            name: "Bachelor Course",
+            slug: "bachelor-course",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        });
+        await testPrisma.course.create({
+          data: {
+            name: "Master Course",
+            slug: "master-course",
+            degree: "Master",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 30000,
+            accommodation: 8000,
+            serviceCharge: 2000,
+          },
+        });
+
+        const req = makeAdminRequest("GET", adminToken, "http://localhost/api/v1/admin/courses?page=1&limit=10&degree=Bachelor");
+
+        const res = await GET_COURSE(req);
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        const allBachelor = data.courses.every((c: any) => c.degree === "Bachelor");
+        expect(allBachelor).toBe(true);
+      });
+
+      it("should filter courses by university", async () => {
+        const uni2 = await testPrisma.university.create({
+          data: { name: "University 2", slug: "university-2", location: "Location 2" },
+        });
+
+        await testPrisma.course.create({
+          data: {
+            name: "Course for Uni 1",
+            slug: "course-uni-1",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        });
+        await testPrisma.course.create({
+          data: {
+            name: "Course for Uni 2",
+            slug: "course-uni-2",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId: uni2.id,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        });
+
+        const req = makeAdminRequest("GET", adminToken, `http://localhost/api/v1/admin/courses?page=1&limit=10&universityId=${universityId}`);
+
+        const res = await GET_COURSE(req);
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        const allCorrectUni = data.courses.every((c: any) => c.universityId === universityId);
+        expect(allCorrectUni).toBe(true);
+      });
+    });
+
+    describe("GET /api/v1/admin/courses/:id", () => {
+      it("should get course detail", async () => {
+        const course = await testPrisma.course.create({
+          data: {
+            name: "Detail Course",
+            slug: "detail-course",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        });
+
+        const req = makeAdminRequest("GET", adminToken, `http://localhost/api/v1/admin/courses/${course.id}`);
+
+        const res = await GET_COURSE_DETAIL(req, { params: { id: course.id } });
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        expect(data.course).toBeDefined();
+        expect(data.course.id).toBe(course.id);
+        expect(data.course.name).toBe("Detail Course");
+      });
+
+      it("should return 404 for non-existent course", async () => {
+        const req = makeAdminRequest("GET", adminToken, "http://localhost/api/v1/admin/courses/fake-id");
+
+        const res = await GET_COURSE_DETAIL(req, { params: { id: "fake-id" } });
+        expect(res.status).toBe(404);
+      });
+    });
+
+    describe("PUT /api/v1/admin/courses/:id", () => {
+      it("should update a course", async () => {
+        const course = await testPrisma.course.create({
+          data: {
+            name: "Original Course",
+            slug: "original-course",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        });
+
+        const req = makeAdminRequest("PUT", adminToken, `http://localhost/api/v1/admin/courses/${course.id}`, {
+          name: "Updated Course",
+          tuition: 25000,
+        });
+
+        const res = await PUT_COURSE(req, { params: { id: course.id } });
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        expect(data.course.name).toBe("Updated Course");
+        expect(Number(data.course.tuition)).toBe(25000);
+      });
+
+      it("should reject duplicate slug on update", async () => {
+        const course1 = await testPrisma.course.create({
+          data: {
+            name: "Course 1",
+            slug: "course-1",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        });
+        await testPrisma.course.create({
+          data: {
+            name: "Course 2",
+            slug: "course-2",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        });
+
+        const req = makeAdminRequest("PUT", adminToken, `http://localhost/api/v1/admin/courses/${course1.id}`, {
+          slug: "course-2",
+        });
+
+        const res = await PUT_COURSE(req, { params: { id: course1.id } });
+        expect(res.status).toBe(400);
+        const data = await res.json();
+        expect(data.error).toBe("Slug already exists");
+      });
+
+      it("should return 404 for non-existent course", async () => {
+        const req = makeAdminRequest("PUT", adminToken, "http://localhost/api/v1/admin/courses/fake-id", {
+          name: "Updated",
+        });
+
+        const res = await PUT_COURSE(req, { params: { id: "fake-id" } });
+        expect(res.status).toBe(404);
+      });
+    });
+
+    describe("DELETE /api/v1/admin/courses/:id", () => {
+      it("should delete a course", async () => {
+        const course = await testPrisma.course.create({
+          data: {
+            name: "To Delete",
+            slug: "to-delete",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        });
+
+        const req = makeAdminRequest("DELETE", adminToken, `http://localhost/api/v1/admin/courses/${course.id}`);
+
+        const res = await DELETE_COURSE(req, { params: { id: course.id } });
+        expect(res.status).toBe(200);
+        const data = await res.json();
+        expect(data.success).toBe(true);
+
+        const deleted = await testPrisma.course.findUnique({ where: { id: course.id } });
+        expect(deleted).toBeNull();
+      });
+
+      it("should return 404 when deleting non-existent course", async () => {
+        const req = makeAdminRequest("DELETE", adminToken, "http://localhost/api/v1/admin/courses/fake-id");
+
+        const res = await DELETE_COURSE(req, { params: { id: "fake-id" } });
+        expect(res.status).toBe(404);
+      });
+
+      it("should return 404 when getting deleted course", async () => {
+        const course = await testPrisma.course.create({
+          data: {
+            name: "Deleted Course",
+            slug: "deleted-course",
+            degree: "Bachelor",
+            language: "English",
+            major: "CS",
+            universityId,
+            intake: "September",
+            tuition: 20000,
+            accommodation: 5000,
+            serviceCharge: 1000,
+          },
+        });
+
+        await testPrisma.course.delete({ where: { id: course.id } });
+
+        const req = makeAdminRequest("GET", adminToken, `http://localhost/api/v1/admin/courses/${course.id}`);
+
+        const res = await GET_COURSE_DETAIL(req, { params: { id: course.id } });
+        expect(res.status).toBe(404);
+      });
+    });
   });
 
   describe("Scholarships", () => {
@@ -88,7 +762,7 @@ describe("Admin Content Management API", () => {
           headers: { "Content-Type": "application/json" },
         });
 
-        const res = await POST(req);
+        const res = await POST_SCHOLARSHIP(req);
         expect(res.status).toBe(401);
       });
 
@@ -113,7 +787,7 @@ describe("Admin Content Management API", () => {
           },
         );
 
-        const res = await POST(req);
+        const res = await POST_SCHOLARSHIP(req);
         expect(res.status).toBe(403);
       });
 
@@ -138,7 +812,7 @@ describe("Admin Content Management API", () => {
           },
         );
 
-        const res = await POST(req);
+        const res = await POST_SCHOLARSHIP(req);
         expect(res.status).toBe(201);
         const data = await res.json();
         expect(data.scholarship).toBeDefined();
@@ -189,7 +863,7 @@ describe("Admin Content Management API", () => {
           },
         );
 
-        const res = await POST(req);
+        const res = await POST_SCHOLARSHIP(req);
         expect(res.status).toBe(400);
         const data = await res.json();
         expect(data.error).toBe("Slug already exists");
@@ -233,7 +907,7 @@ describe("Admin Content Management API", () => {
 
         const req = makeAdminRequest("GET", adminToken, "http://localhost/api/v1/admin/scholarships?page=1&limit=10");
 
-        const res = await GET(req);
+        const res = await GET_SCHOLARSHIP(req);
         expect(res.status).toBe(200);
         const data = await res.json();
         expect(data.scholarships).toHaveLength(2);
@@ -281,7 +955,7 @@ describe("Admin Content Management API", () => {
 
         const req = makeAdminRequest("GET", adminToken, "http://localhost/api/v1/admin/scholarships?page=1&limit=10&search=Computer");
 
-        const res = await GET(req);
+        const res = await GET_SCHOLARSHIP(req);
         expect(res.status).toBe(200);
         const data = await res.json();
         expect(data.scholarships).toHaveLength(1);
@@ -324,7 +998,7 @@ describe("Admin Content Management API", () => {
 
         const req = makeAdminRequest("GET", adminToken, "http://localhost/api/v1/admin/scholarships?page=1&limit=10&type=Merit-Based");
 
-        const res = await GET(req);
+        const res = await GET_SCHOLARSHIP(req);
         expect(res.status).toBe(200);
         const data = await res.json();
         expect(data.scholarships).toHaveLength(1);
@@ -367,7 +1041,7 @@ describe("Admin Content Management API", () => {
 
         const req = makeAdminRequest("GET", adminToken, "http://localhost/api/v1/admin/scholarships?page=1&limit=10&degree=Bachelor");
 
-        const res = await GET(req);
+        const res = await GET_SCHOLARSHIP(req);
         expect(res.status).toBe(200);
         const data = await res.json();
         expect(data.scholarships).toHaveLength(1);

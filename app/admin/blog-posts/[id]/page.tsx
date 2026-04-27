@@ -28,14 +28,14 @@ export default function BlogPostDetailPage({
         .then((r) => r.json())
         .then((d) => {
           setForm({
-            title: d.title,
-            slug: d.slug,
-            featuredImage: d.featuredImage || "",
-            category: d.category || "",
-            topic: d.topic || "",
-            content: d.content || "",
-            published: d.published || false,
-            publishedAt: d.publishedAt || null,
+            title: d.blogPost.title,
+            slug: d.blogPost.slug,
+            featuredImage: d.blogPost.featuredImage || "",
+            category: d.blogPost.category || "",
+            topic: d.blogPost.topic || "",
+            content: d.blogPost.content || "",
+            published: d.blogPost.published || false,
+            publishedAt: d.blogPost.publishedAt || null,
           });
           setLoading(false);
         })
